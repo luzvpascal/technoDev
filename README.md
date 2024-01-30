@@ -3,12 +3,12 @@
 This repository contains the code used to produce the results for the paper *When to stop developing new technologies?*. 
 Here we provide instructions on how to use the code, and reproduce results.
 
-WARNING (long run time for experiments): We produced the results of the paper in 12h, on a DELL laptop (CPU	11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz, Base speed:	1.80 GHz, Sockets:	1,	Cores:	4, Logical processors:	8).
+**WARNING** (long run time for experiments): We produced the results of the paper in 12h, on a DELL laptop (CPU	11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz, Base speed:	1.80 GHz, Sockets:	1,	Cores:	4, Logical processors:	8).
 
 ## Table of contents
 * [Requirements](#requirements)
-* [Run experiments](#run_experiments)
-* [Description of files and folders](#description_of_files_and_folders) 
+* [Run experiments](#run)
+* [Description of files and folders](#description) 
 ## Requirements
 This code is implemented in R and calls an external executable programmed in C++ (MCUAMS folder).
 To run the numerical experiments, users can decide to compile or not the C++ code. The succesful compilation of the MCUAMS allows to run all experiments from scratch. Alternatively, the user can directly use the outcomes of the MCUAMS algorithm (stored in res/mean_params and res/priors) by setting the variable `runMCUAMS` to `FALSE` in the file `variables of problem.R`.
