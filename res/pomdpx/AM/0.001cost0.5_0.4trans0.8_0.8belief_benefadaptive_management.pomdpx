@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<pomdpx version ="1.0" id="sample" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="pomdpx.xsd">
+
+<Description>hmMDP model</Description>
+
+<Discount>0.9</Discount>
+
+<Variable>
+
+<StateVar vnamePrev="species_0" vnameCurr="species_1" fullyObs="true">
+<ValueEnum>obs_state1 obs_state2</ValueEnum>
+</StateVar>
+
+<StateVar vnamePrev="hidden_0" vnameCurr="hidden_1" fullyObs="false">
+<ValueEnum>model1 model2 model3 model4</ValueEnum>
+</StateVar>
+
+<ActionVar vname="action_control">
+<ValueEnum>action1 action2</ValueEnum>
+</ActionVar>
+
+<ObsVar vname="obs">
+<ValueEnum>o</ValueEnum>
+</ObsVar>
+
+ <RewardVar vname="reward_agent" />
+</Variable>
+
+<InitialStateBelief>
+
+<CondProb>
+<Var>species_0</Var>
+<Parent>null</Parent>
+<Parameter type="TBL">
+<Entry>
+<Instance> - </Instance>
+<ProbTable>1 0</ProbTable>
+</Entry>
+</Parameter>
+</CondProb>
+
+<CondProb>
+<Var>hidden_0 </Var>
+<Parent>null</Parent>
+<Parameter type="TBL">
+<Entry>
+<Instance> - </Instance>
+<ProbTable>0.04 0.16 0.16 0.64</ProbTable>
+</Entry>
+</Parameter>
+</CondProb>
+
+</InitialStateBelief>
+
+
+<StateTransitionFunction>
+
+ <CondProb>
+ <Var>species_1</Var>
+ <Parent>action_control hidden_0 species_0</Parent>
+ <Parameter type="TBL">
+  
+  <Entry>
+ <Instance> action1 model1 obs_state1 obs_state1  </Instance>
+ <ProbTable> 0.5 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model1 obs_state1 obs_state2  </Instance>
+ <ProbTable> 0.5 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model1 obs_state2 obs_state1  </Instance>
+ <ProbTable> 0.4001 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model1 obs_state2 obs_state2  </Instance>
+ <ProbTable> 0.5999 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model1 obs_state1 obs_state1  </Instance>
+ <ProbTable> 0.7457 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model1 obs_state1 obs_state2  </Instance>
+ <ProbTable> 0.2543 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model1 obs_state2 obs_state1  </Instance>
+ <ProbTable> 0.6935 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model1 obs_state2 obs_state2  </Instance>
+ <ProbTable> 0.3065 </ProbTable>
+ </Entry>
+ 
+  <Entry>
+ <Instance> action1 model2 obs_state1 obs_state1  </Instance>
+ <ProbTable> 0.5 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model2 obs_state1 obs_state2  </Instance>
+ <ProbTable> 0.5 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model2 obs_state2 obs_state1  </Instance>
+ <ProbTable> 0.3999 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model2 obs_state2 obs_state2  </Instance>
+ <ProbTable> 0.6001 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model2 obs_state1 obs_state1  </Instance>
+ <ProbTable> 0.7448 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model2 obs_state1 obs_state2  </Instance>
+ <ProbTable> 0.2552 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model2 obs_state2 obs_state1  </Instance>
+ <ProbTable> 0.1951 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model2 obs_state2 obs_state2  </Instance>
+ <ProbTable> 0.8049 </ProbTable>
+ </Entry>
+ 
+  <Entry>
+ <Instance> action1 model3 obs_state1 obs_state1  </Instance>
+ <ProbTable> 0.5 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model3 obs_state1 obs_state2  </Instance>
+ <ProbTable> 0.5 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model3 obs_state2 obs_state1  </Instance>
+ <ProbTable> 0.4001 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model3 obs_state2 obs_state2  </Instance>
+ <ProbTable> 0.5999 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model3 obs_state1 obs_state1  </Instance>
+ <ProbTable> 0.2438 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model3 obs_state1 obs_state2  </Instance>
+ <ProbTable> 0.7562 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model3 obs_state2 obs_state1  </Instance>
+ <ProbTable> 0.6939 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model3 obs_state2 obs_state2  </Instance>
+ <ProbTable> 0.3061 </ProbTable>
+ </Entry>
+ 
+  <Entry>
+ <Instance> action1 model4 obs_state1 obs_state1  </Instance>
+ <ProbTable> 0.5 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model4 obs_state1 obs_state2  </Instance>
+ <ProbTable> 0.5 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model4 obs_state2 obs_state1  </Instance>
+ <ProbTable> 0.3999 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action1 model4 obs_state2 obs_state2  </Instance>
+ <ProbTable> 0.6001 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model4 obs_state1 obs_state1  </Instance>
+ <ProbTable> 0.2452 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model4 obs_state1 obs_state2  </Instance>
+ <ProbTable> 0.7548 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model4 obs_state2 obs_state1  </Instance>
+ <ProbTable> 0.1929 </ProbTable>
+ </Entry>
+ <Entry>
+ <Instance> action2 model4 obs_state2 obs_state2  </Instance>
+ <ProbTable> 0.8071 </ProbTable>
+ </Entry>
+ </Parameter>
+ </CondProb>
+
+ <CondProb>
+ <Var>hidden_1</Var>
+ <Parent>hidden_0</Parent>
+ <Parameter type="TBL">
+ <Entry>
+<Instance> - - </Instance>
+ <ProbTable>identity</ProbTable>
+ </Entry>
+ </Parameter>
+ </CondProb>
+
+ </StateTransitionFunction>
+
+
+<ObsFunction>
+
+ <CondProb>
+ <Var>obs</Var>
+ <Parent>hidden_1</Parent>
+ <Parameter type="TBL">
+ <Entry>
+<Instance> model1 o</Instance>
+<ProbTable>1</ProbTable>
+</Entry>
+ <Entry>
+<Instance> model2 o</Instance>
+<ProbTable>1</ProbTable>
+</Entry>
+ <Entry>
+<Instance> model3 o</Instance>
+<ProbTable>1</ProbTable>
+</Entry>
+ <Entry>
+<Instance> model4 o</Instance>
+<ProbTable>1</ProbTable>
+</Entry>
+ </Parameter>
+</CondProb>
+</ObsFunction>
+
+
+<RewardFunction>
+<Func>
+<Var>reward_agent</Var>
+<Parent>action_control species_0</Parent>
+<Parameter type="TBL">
+ <Entry>
+<Instance> - - </Instance>
+<ValueTable>0.5 1 0.495 0.995</ValueTable>
+</Entry>
+ </Parameter>
+
+    </Func>
+
+    </RewardFunction>
+
+
+</pomdpx>
