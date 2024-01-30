@@ -55,7 +55,8 @@ tr_nothing <- matrix(c(0.8, 0.2, 0.8, 0.2), ncol=2, byrow = TRUE)
 solve_hmMDP <- TRUE
 timeout <- 500 #set timeout for solving
 precision <- 1e-2
-compute_mean_params <- TRUE
+
+runMCUAMS <- TRUE #change to run MC UAMS
 
 ## performance simulations parameters ####
 run_simulations <- TRUE

@@ -1,0 +1,2 @@
+Hello, World!
+42 is an integer.
