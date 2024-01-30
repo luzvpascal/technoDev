@@ -15,6 +15,14 @@ To run the numerical experiments, users can decide to compile or not the C++ cod
 ### C++ requirements (MCUAMS folder)
 The MCUAMS folder contains the C++ implementation of the *Universal Adaptive Management Solver* [see publication](https://ojs.aaai.org/index.php/AAAI/article/view/17747).
 
+Tested compiler:
+- CLion 2022 under Windows. Toolchain: MinGW (version w64 9.0); Cmake 3.22.3; C++14.
+
+```
+$ cd MCUAMS/src
+$ make
+```
+
 
 ### R requirements
 Users need to make sure that their version of R is at least 4.3.1. We recommend running the following code in R to preinstall all the necessary packages:
