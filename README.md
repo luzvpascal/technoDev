@@ -10,19 +10,19 @@ WARNING (long run time for experiments): We produced the results of the paper in
 
 ## Requirements:
 This code is implemented in R and calls an external executable programmed in C++ (MCUAMS folder).
-To run the numerical experiments, users can decide to compile or not the C++ code. 
+To run the numerical experiments, users can decide to compile or not the C++ code. The succesful compilation of the MCUAMS allows to run all experiments from scratch. Alternatively, the user can directly use the outcomes of the MCUAMS algorithm (stored in res/mean_params and res/priors) by setting the variable `runMCUAMS` to `FALSE` in the file `variables of problem.R`.
 
-### C++ requirements (MCUAMS folder)
+### C++ requirements (MCUAMS folder - optional compilation)
 The MCUAMS folder contains the C++ implementation of the *Universal Adaptive Management Solver* [see publication](https://ojs.aaai.org/index.php/AAAI/article/view/17747).
 
 Tested compiler:
 - CLion 2022 under Windows. Toolchain: MinGW (version w64 9.0); Cmake 3.22.3; C++14.
 
+Quick start on Windows:
 ```
 $ cd MCUAMS/src
 $ make
 ```
-
 
 ### R requirements
 Users need to make sure that their version of R is at least 4.3.1. We recommend running the following code in R to preinstall all the necessary packages:
@@ -44,3 +44,5 @@ install_if_not_installed <- function(package) {
 # Apply the function to install packages
 invisible(lapply(packages_to_install, install_if_not_installed))
 ```
+## Run experiments
+
