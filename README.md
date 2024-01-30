@@ -13,7 +13,7 @@ This code is implemented in R and calls an external executable programmed in C++
 To run the numerical experiments, users can decide to compile or not the C++ code. The succesful compilation of the MCUAMS allows to run all experiments from scratch. Alternatively, the user can directly use the outcomes of the MCUAMS algorithm (stored in res/mean_params and res/priors) by setting the variable `runMCUAMS` to `FALSE` in the file `variables of problem.R`.
 
 ### C++ requirements (MCUAMS folder - optional compilation)
-The MCUAMS folder contains the C++ implementation of the *Universal Adaptive Management Solver* [see publication](https://ojs.aaai.org/index.php/AAAI/article/view/17747).
+The MCUAMS folder contains the C++ implementation of the *Universal Adaptive Management Solver* [see publication](https://ojs.aaai.org/index.php/AAAI/article/view/17747). This algorithm is used to predict the possible outcomes of technology deployment.
 
 Tested compiler:
 - CLion 2022 under Windows. Toolchain: MinGW (version w64 9.0); Cmake 3.22.3; C++14.
@@ -45,4 +45,14 @@ install_if_not_installed <- function(package) {
 invisible(lapply(packages_to_install, install_if_not_installed))
 ```
 ## Run experiments
+
+To run all experiments, run in R the code in `main.R`. This code operates as follows:
+- install and load necessary packages
+- load necessary functions and variables
+- Run experiment: studying the influence of initial belief technology is feasible, and costs of deployment on solution (numerical and approximate analytical solution)
+- Run experiment: studying the influence of initial belief technology is beneficial for deployment on 4 profiles of systems (numerical and approximate analytical solution)
+
+All figures are saved in `res/figures paper/`.
+
+## Description of files and folders
 
