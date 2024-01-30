@@ -7,8 +7,8 @@ Here we provide instructions on how to use the code, and reproduce results.
 
 ## Table of contents
 * [Requirements](#requirements)
-* [Run experiments](#run)
-* [Description of files and folders](#description) 
+* [Run experiments](#run-experiments)
+* [Description of files and folders](#description-of-files-and-folders) 
 ## Requirements
 This code is implemented in R and calls an external executable programmed in C++ (MCUAMS folder).
 To run the numerical experiments, users can decide to compile or not the C++ code. The succesful compilation of the MCUAMS allows to run all experiments from scratch. Alternatively, the user can directly use the outcomes of the MCUAMS algorithm (stored in res/mean_params and res/priors) by setting the variable `runMCUAMS` to `FALSE` in the file `variables of problem.R`.
