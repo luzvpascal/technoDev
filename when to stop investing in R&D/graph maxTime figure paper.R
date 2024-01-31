@@ -27,7 +27,7 @@ graph_maxTime <- ggplot(results_graph,
                               "dodgerblue4",
                               "darkblue"))+
   labs(x = "Initial belief in project feasibility (log-scale)",
-       y = TeX("$T_{max}$: years investing in project development"),
+       y = TeX("$T_{max}$: time limit for project development"),
        col = ("Relative cost\nof development"),
        fill=("Relative cost\nof development"))+
   theme_minimal()+

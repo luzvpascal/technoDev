@@ -62,5 +62,5 @@ source("simulations/simulations.R")
 source("variables of problem.R")
 source("files_names_functions.R")
 
-## RD vs no RD ####
-source("RD vs no RD/heatmap value no RD vs value RD.R")
+# ## RD vs no RD ####
+# source("RD vs no RD/heatmap value no RD vs value RD.R")

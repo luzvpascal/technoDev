@@ -15,7 +15,7 @@ max_time_heatMap <- ggplot(results,
   scale_fill_gradient(low = "palegoldenrod", high = "darkgreen") +
   labs(x = "Difficulty of recovery\n Pr(unhealthy| unhealthy, BAU)",
        y = "Degradation rate\n Pr(unhealthy| healthy, BAU)",
-       fill = TeX("$T_{max}$")) +
+       fill = TeX("Time limit\nfor technology\ndevelopment$T_{max}$")) +
   geom_contour(aes(z = max_invest),
                binwidth = 10,
                breaks = breaks_countour,
