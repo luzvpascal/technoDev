@@ -42,8 +42,9 @@ initial_belief_benef <- c( #initial belief tech beneficial
   (initial_belief_benef_low)*(initial_belief_benef_high)##initial belief tech better than do nothing
 )
 
+
 ##reward file name####
-reward_ready_file <- paste0("res/rewards/reward_",coeffDev,".csv")
+reward_ready_file <- paste0("res/rewards/reward_",coeffDev,".csv") #for MCUAMS
 write.table(reward_reef+matrix(c(0,0,-costImp_P1,-costImp_P1), ncol=2),
             reward_ready_file, col.names = FALSE,
             row.names = FALSE, sep = ",")
