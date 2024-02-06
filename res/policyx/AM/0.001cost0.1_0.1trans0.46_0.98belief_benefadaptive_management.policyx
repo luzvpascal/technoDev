@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0.1_0.1trans0.46_0.98belief_benefadaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="4" numObsValue="2" numVectors="23">
+<Vector action="1" obsValue="0">7.00023 8.67233 7.91713 9.2412 </Vector>
+<Vector action="0" obsValue="0">8.49145 9.1255 8.59561 9.19824 </Vector>
+<Vector action="0" obsValue="0">8.5652 9.16476 8.60325 9.19756 </Vector>
+<Vector action="0" obsValue="0">8.65322 9.19074 8.6604 9.19752 </Vector>
+<Vector action="0" obsValue="0">8.67749 9.19035 8.68271 9.19676 </Vector>
+<Vector action="0" obsValue="0">8.43989 9.21207 8.44409 9.20981 </Vector>
+<Vector action="0" obsValue="0">8.67968 9.19031 8.68472 9.19669 </Vector>
+<Vector action="0" obsValue="0">9.04942 9.04987 9.04987 9.04987 </Vector>
+<Vector action="0" obsValue="0">8.71684 9.19801 8.71796 9.1954 </Vector>
+<Vector action="0" obsValue="0">8.47447 9.21231 8.47704 9.20959 </Vector>
+<Vector action="1" obsValue="1">7.50001 9.58172 8.26219 9.74093 </Vector>
+<Vector action="1" obsValue="1">8.50407 9.59703 8.81575 9.73301 </Vector>
+<Vector action="1" obsValue="1">8.91559 9.61018 9.04329 9.72621 </Vector>
+<Vector action="1" obsValue="1">8.71233 9.73264 8.71715 9.73007 </Vector>
+<Vector action="1" obsValue="1">8.81902 9.73247 8.8236 9.72984 </Vector>
+<Vector action="1" obsValue="1">8.86275 9.73231 8.86735 9.72964 </Vector>
+<Vector action="1" obsValue="1">8.88067 9.73218 8.88533 9.72947 </Vector>
+<Vector action="1" obsValue="1">9.19054 9.70326 9.19198 9.707 </Vector>
+<Vector action="0" obsValue="1">9.54941 9.54986 9.54986 9.54986 </Vector>
+<Vector action="1" obsValue="1">9.07031 9.72639 9.07225 9.72321 </Vector>
+<Vector action="1" obsValue="1">9.14804 9.72141 9.14908 9.71783 </Vector>
+<Vector action="1" obsValue="1">9.1799 9.71713 9.18066 9.71321 </Vector>
+<Vector action="1" obsValue="1">8.90731 9.73238 8.90996 9.72927 </Vector>
+</AlphaVector> </Policy>

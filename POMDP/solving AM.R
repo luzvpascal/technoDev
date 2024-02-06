@@ -6,7 +6,7 @@ solving_AM <- function(compute_mean_params,
                           solve_hmMDP,
                           file_pomdpx_index,
                           file_outpolicy_index,
-                          initial_belief_preset=FALSE
+                          initial_belief_preset=NA
 ){
   ## run MCUAMS ####
   if (compute_mean_params){
@@ -32,8 +32,8 @@ solving_AM <- function(compute_mean_params,
   ##slve POMDP
   reward_intermediate <- as.matrix(unname(read.csv(reward_ready_file_index, header = FALSE))) %>%
     suppressWarnings()
-  if (initial_belief_preset){
-    initial_belief <- initial_belief_benef
+  if (!is.na(initial_belief_preset[1])){
+    initial_belief <- initial_belief_preset
     initial_belief <- initial_belief[data_mean_parameters$opt]
     initial_belief <- initial_belief/sum(initial_belief)
   } else {

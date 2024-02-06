@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0.1_0.1trans0.24_0.98belief_benefadaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="4" numObsValue="2" numVectors="23">
+<Vector action="1" obsValue="0">7.00415 8.68349 7.91705 9.24505 </Vector>
+<Vector action="0" obsValue="0">9.04915 9.0496 9.0496 9.0496 </Vector>
+<Vector action="0" obsValue="0">8.69149 9.20175 8.6924 9.20166 </Vector>
+<Vector action="0" obsValue="0">8.72829 9.19581 8.72895 9.19488 </Vector>
+<Vector action="0" obsValue="0">8.48996 9.21335 8.49097 9.21201 </Vector>
+<Vector action="0" obsValue="0">8.48358 9.21437 8.48447 9.2125 </Vector>
+<Vector action="1" obsValue="1">7.50357 9.58667 8.26228 9.7446 </Vector>
+<Vector action="1" obsValue="1">8.50497 9.60142 8.81558 9.73666 </Vector>
+<Vector action="1" obsValue="1">8.91576 9.61411 9.04315 9.72984 </Vector>
+<Vector action="1" obsValue="1">9.08428 9.62502 9.13675 9.72398 </Vector>
+<Vector action="1" obsValue="1">9.15341 9.6344 9.17525 9.71894 </Vector>
+<Vector action="1" obsValue="1">9.18177 9.64247 9.19108 9.71462 </Vector>
+<Vector action="1" obsValue="1">9.1934 9.6494 9.19759 9.71091 </Vector>
+<Vector action="0" obsValue="1">9.54914 9.54959 9.54959 9.54959 </Vector>
+<Vector action="1" obsValue="1">9.06896 9.72522 9.0707 9.72565 </Vector>
+<Vector action="1" obsValue="1">9.14736 9.72058 9.14832 9.7204 </Vector>
+<Vector action="1" obsValue="1">9.17952 9.71659 9.18024 9.71589 </Vector>
+<Vector action="1" obsValue="1">9.19271 9.71315 9.19337 9.71202 </Vector>
+<Vector action="1" obsValue="1">8.9226 9.73356 8.92366 9.73199 </Vector>
+<Vector action="1" obsValue="1">8.7613 9.73463 8.76291 9.73306 </Vector>
+<Vector action="1" obsValue="1">8.84598 9.73478 8.84716 9.733 </Vector>
+<Vector action="1" obsValue="1">8.88072 9.73491 8.88182 9.73294 </Vector>
+<Vector action="1" obsValue="1">8.91299 9.73478 8.91393 9.73261 </Vector>
+</AlphaVector> </Policy>

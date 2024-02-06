@@ -1,10 +1,11 @@
 results <- read.csv(heatmap_maxTime_file_varying_transitions, sep=" ",
-                 header=FALSE)
+                    header=FALSE)
 names(results) <- c("tr_low_low",
-                 "tr_high_low",
-                 "max_invest",
-                 "coeffDev_index",
-                 "coeffDeploy_index")
+                    "tr_high_low",
+                    "max_invest",
+                    "coeffDev_index",
+                    "coeffDeploy_index")
+
 
 ## map #####
 breaks_countour <- c(0.01,seq(10,50,10))

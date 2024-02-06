@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0.1_0.9trans0.46_0.42belief_benefadaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="4" numObsValue="2" numVectors="50">
+<Vector action="1" obsValue="0">6.47545 7.21169 7.33169 8.14164 </Vector>
+<Vector action="0" obsValue="0">7.22734 7.4826 7.33754 7.88027 </Vector>
+<Vector action="0" obsValue="0">7.23616 7.59202 7.32703 7.98005 </Vector>
+<Vector action="0" obsValue="0">7.23695 7.60188 7.32609 7.98904 </Vector>
+<Vector action="0" obsValue="0">7.23702 7.60276 7.326 7.98984 </Vector>
+<Vector action="0" obsValue="0">7.24561 7.69405 7.31768 8.00941 </Vector>
+<Vector action="0" obsValue="0">7.33045 7.79372 7.33227 7.84876 </Vector>
+<Vector action="0" obsValue="0">7.31437 7.93493 7.31742 8.00417 </Vector>
+<Vector action="0" obsValue="0">7.30784 7.99974 7.30752 8.06114 </Vector>
+<Vector action="0" obsValue="0">7.31534 8.00147 7.31476 8.04455 </Vector>
+<Vector action="0" obsValue="0">7.32421 7.96493 7.32344 7.99864 </Vector>
+<Vector action="0" obsValue="0">7.33791 7.80241 7.33744 7.82762 </Vector>
+<Vector action="0" obsValue="0">7.32565 7.9606 7.32481 7.99111 </Vector>
+<Vector action="0" obsValue="0">7.31559 8.01965 7.31445 8.0514 </Vector>
+<Vector action="0" obsValue="0">7.3029 8.04702 7.30134 8.07846 </Vector>
+<Vector action="0" obsValue="0">7.29927 8.05107 7.29755 8.08121 </Vector>
+<Vector action="0" obsValue="0">7.29647 8.05339 7.29462 8.08241 </Vector>
+<Vector action="0" obsValue="0">7.29071 8.05843 7.28859 8.08492 </Vector>
+<Vector action="0" obsValue="0">7.29523 8.05785 7.29333 8.08466 </Vector>
+<Vector action="0" obsValue="0">7.30814 8.04685 7.30674 8.07444 </Vector>
+<Vector action="0" obsValue="0">7.32571 7.96051 7.32486 7.99081 </Vector>
+<Vector action="0" obsValue="0">7.33794 7.80233 7.33748 7.8274 </Vector>
+<Vector action="0" obsValue="0">7.35432 7.35504 7.35432 7.35444 </Vector>
+<Vector action="0" obsValue="0">7.33785 7.80936 7.33737 7.83166 </Vector>
+<Vector action="0" obsValue="0">7.32546 7.96971 7.3246 7.99628 </Vector>
+<Vector action="0" obsValue="0">7.31491 8.03083 7.31371 8.05714 </Vector>
+<Vector action="0" obsValue="0">7.30767 8.05049 7.30623 8.07626 </Vector>
+<Vector action="1" obsValue="1">7.58586 7.81926 7.62677 8.20682 </Vector>
+<Vector action="1" obsValue="1">6.84277 7.76251 7.60794 8.51226 </Vector>
+<Vector action="1" obsValue="1">7.4788 7.87011 7.6129 8.41094 </Vector>
+<Vector action="1" obsValue="1">7.51321 7.92423 7.61316 8.35905 </Vector>
+<Vector action="1" obsValue="1">7.52326 7.99916 7.60339 8.37496 </Vector>
+<Vector action="1" obsValue="1">7.5238 8.03684 7.60288 8.38311 </Vector>
+<Vector action="1" obsValue="1">7.60456 8.29172 7.60658 8.36754 </Vector>
+<Vector action="1" obsValue="1">7.59208 8.37204 7.59169 8.44095 </Vector>
+<Vector action="1" obsValue="1">7.59264 8.37516 7.59203 8.43798 </Vector>
+<Vector action="1" obsValue="1">7.62658 8.14833 7.62606 8.17644 </Vector>
+<Vector action="1" obsValue="1">7.61284 8.32603 7.61189 8.36001 </Vector>
+<Vector action="1" obsValue="1">7.57967 8.43065 7.57758 8.46308 </Vector>
+<Vector action="1" obsValue="1">7.57909 8.43535 7.57699 8.46545 </Vector>
+<Vector action="1" obsValue="1">7.57567 8.43804 7.57341 8.46679 </Vector>
+<Vector action="1" obsValue="1">7.5931 8.4231 7.59152 8.45402 </Vector>
+<Vector action="1" obsValue="1">7.58679 8.43369 7.58498 8.46288 </Vector>
+<Vector action="1" obsValue="1">7.60161 8.39965 7.60031 8.43064 </Vector>
+<Vector action="1" obsValue="1">7.61258 8.33465 7.61162 8.36523 </Vector>
+<Vector action="0" obsValue="1">7.64498 7.64583 7.64498 7.64512 </Vector>
+<Vector action="1" obsValue="1">7.62646 8.15701 7.62593 8.18173 </Vector>
+<Vector action="1" obsValue="1">7.61253 8.33741 7.61156 8.3668 </Vector>
+<Vector action="1" obsValue="1">7.60145 8.40327 7.60013 8.43264 </Vector>
+<Vector action="1" obsValue="1">7.59252 8.42754 7.5909 8.45624 </Vector>
+</AlphaVector> </Policy>

@@ -118,11 +118,35 @@ prob_ready_tests <- c(seq(0.2,0.9,0.1), 0.95,0.98)
 expected_time_Tmax_file <-  paste("res/stop dev/",coeffDev,"cost", 0.5,"belief",tr_nothing[1],tr_nothing[2],"graph MaxTime expected time varying.csv", sep="")
 analytical_expected_time_Tmax_file <-  paste("res/stop dev/",coeffDev,"cost", 0.5,"belief",tr_nothing[1],tr_nothing[2],"graph MaxTime expected time varying.csv", sep="")
 
+
+############################################################
+## interpreting policy parameters: identifying profiles ####
+############################################################
+profiles_definition_file <- paste("res/profiles/",coeffDev,"cost", 0.5,"belief","_profiles.csv", sep="")
+profiles_definition_figure <- paste("res/figures paper/profiles/",coeffDev,"cost", 0.5,"belief","_profiles.svg", sep="")
+
+
+combination_beliefs <- expand.grid(seq(0,1,length.out=51),seq(0,1,length.out=51))
+names(combination_beliefs) <- c("belief_benef_low","belief_benef_high")
+sample_tested_beliefs <- combination_beliefs %>%
+  mutate(bA1A1 = (1-belief_benef_low)*(1-belief_benef_high),
+         bA1A2 = (1-belief_benef_low)*(belief_benef_high),
+         bA2A1 = (belief_benef_low)*(1-belief_benef_high),
+         bA2A2 = (belief_benef_low)*(belief_benef_high))
+sample_tested_beliefs <- unname(as.matrix(sample_tested_beliefs[-c(1,2)]))
+
 ##########################################################################################
 ## interpreting policy parameters: influence of initial belief beneifts techno on Tmax####
 ###############################################################################################
-coeffs_initial_belief_benefits_low <- seq(0,1, length.out=101)
-coeffs_initial_belief_benefits_high <- seq(0,1, length.out=101)
+coeffs_initial_belief_benefits_low <- seq(0,1, length.out=51)
+coeffs_initial_belief_benefits_high <- seq(0,1, length.out=51)
 
 heatmap_maxTime_file_varying_priors <- paste("res/initial belief benefits/",coeffDev,"cost",0.5,"belief","heatmapMaxTime preset priors.csv", sep="")
 heatmap_maxTime_figure_varying_priors <- paste("res/figures paper/initial belief benefits/",coeffDev,"cost",0.5,"belief","heatmapMaxTime preset priors.svg", sep="")
+
+AM_strategy_varying_priors_file <- paste("res/initial belief benefits/",coeffDev,"cost", 0.5,"belief","_AM_strategy.csv", sep="")
+AM_strategy_varying_priors_figure <- paste("res/figures paper/initial belief benefits/",coeffDev,"cost", 0.5,"belief","_AM_strategy.svg", sep="")
+
+heatmap_maxTime_overlap_AM_strategy_figure_varying_priors <- paste("res/figures paper/initial belief benefits/",
+                                                                   coeffDev,"cost",0.5,"belief","heatmapMaxTime overlap preset priors.svg", sep="")
+

@@ -5,24 +5,26 @@
 #we determine the max number of time steps investing in project dev before we give up
 
 ## preset transition matrix if do nothing ####
-profile_possibilities <- c("A fast degradation\nslow recovery",
-                           "B fast degradation\nfast recovery",
-                           "C slow degradation\nslow recovery",
-                           "D slow degradation\nfast recovery")
+profile_possibilities <- c(
+                           "A fast degradation\nfast recovery",
+                           "B fast degradation\nslow recovery",
+                           "C slow degradation\nfast recovery",
+                           "D slow degradation\nslow recovery"
+                           )
 
-for (profile in profile_possibilities[4]){
-    if (profile == "A fast degradation\nslow recovery"){
-      tr_low_low <- 0.8
-      tr_high_low <- 0.8
-    } else if (profile=="B fast degradation\nfast recovery"){
-      tr_low_low <- 0.2
-      tr_high_low <- 0.8
-    } else if (profile=="C slow degradation\nslow recovery"){
-      tr_low_low <- 0.8
-      tr_high_low <- 0.2
-    } else if (profile=="D slow degradation\nfast recovery"){
-      tr_low_low <- 0.2
-      tr_high_low <- 0.2
+for (profile in profile_possibilities){
+    if (profile == "B fast degradation\nslow recovery"){
+      tr_low_low <- 0.9
+      tr_high_low <- 0.9
+    } else if (profile=="A fast degradation\nfast recovery"){
+      tr_low_low <- 0.1
+      tr_high_low <- 0.9
+    } else if (profile=="D slow degradation\nslow recovery"){
+      tr_low_low <- 0.9
+      tr_high_low <- 0.1
+    } else if (profile=="C slow degradation\nfast recovery"){
+      tr_low_low <- 0.1
+      tr_high_low <- 0.1
     }
 
     #expected value if do nothing
@@ -41,14 +43,32 @@ for (profile in profile_possibilities[4]){
     value_noRD_infty <- value_noRD/(1-gamma)
 
     ## solve adaptive management deployment#### #already solved?
-    alphas_AM <- read_policyx2(file_outpolicy_AM(costDev_P1, tr_low_low,tr_high_low)) #alpha vectors
     data_mean_parameters <- read.csv(output_meanPars_file(costDev_P1, tr_low_low,tr_high_low))
 
     ## influence of initial belief ####
     for (belief_benef_low in coeffs_initial_belief_benefits_low){
       for (belief_benef_high in coeffs_initial_belief_benefits_high){
+        ## solving AM ####
+        initial_belief_benef_index <- c( #initial belief tech beneficial
+          (1-belief_benef_low)*(1-belief_benef_high), ##initial belief do nothing better than tech
+          (1-belief_benef_low)*(belief_benef_high),##initial belief tech better than do nothing high
+          (belief_benef_low)*(1-belief_benef_high), ##initial belief tech better than do nothing low
+          (belief_benef_low)*(belief_benef_high)##initial belief tech better than do nothing
+        )
 
-        ## solve POMDP development ####
+        solving_AM(compute_mean_params=TRUE,
+                   tr_nothing_index,
+                   reward_ready_file,
+                   output_meanPars_file = output_meanPars_file(costDev_P1, tr_low_low,tr_high_low),
+                   output_priors_file=output_priors_file(costDev_P1, tr_low_low,tr_high_low),
+                   solve_hmMDP = TRUE,
+                   file_pomdpx_index=file_pomdpx_AM(costDev_P1, tr_low_low,tr_high_low, belief_benef_low, belief_benef_high),
+                   file_outpolicy_index=file_outpolicy_AM(costDev_P1, tr_low_low,tr_high_low, belief_benef_low, belief_benef_high),
+                   initial_belief_preset=initial_belief_benef_index
+        )
+
+        alphas_AM <- read_policyx2(file_outpolicy_AM(costDev_P1, tr_low_low,tr_high_low,belief_benef_low,belief_benef_high)) #alpha vectors
+
         ## Estimating reward value AM
         initial_belief_AM <- c((1-belief_benef_low)*(1-belief_benef_high), #BAU is better
                                (1-belief_benef_low)*(belief_benef_high), #BAU is better if low, deployment is better if high
@@ -80,15 +100,15 @@ for (profile in profile_possibilities[4]){
         models <- solving_POMDP(prob_ready,
                                 initial_belief_state_P1,
                                 reward_POMDP,
-                                solve_hmMDP,
-                                file_pomdpx_index=file_pomdpx_techdev_preset_priors(costDev_P1, tr_low_low,tr_high_low,belief_benef_low,belief_benef_high),
-                                file_outpolicy_index=file_outpolicy_techdev_preset_priors(costDev_P1, tr_low_low,tr_high_low,belief_benef_low,belief_benef_high))
+                                solve_hmMDP = TRUE,
+                                file_pomdpx_index=file_pomdpx_techdev(costDev_P1, tr_low_low,tr_high_low,belief_benef_low,belief_benef_high),
+                                file_outpolicy_index=file_outpolicy_techdev(costDev_P1, tr_low_low,tr_high_low,belief_benef_low,belief_benef_high))
 
         ## figure out Tmax ####
         models <-list(transition_function_P1(prob_ready),
                       transition_function_P1(1))
 
-        alphas <- read_policyx2(file_outpolicy_techdev_preset_priors(costDev_P1, tr_low_low,tr_high_low,belief_benef_low,belief_benef_high)) #alpha vectors
+        alphas <- read_policyx2(file_outpolicy_techdev(costDev_P1, tr_low_low,tr_high_low,belief_benef_low,belief_benef_high)) #alpha vectors
 
         #transition function momdp
         transition_momdp <- transition_hmMDP(models)

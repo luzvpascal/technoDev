@@ -32,7 +32,7 @@ for (tr_low_low in coeffs_tr_low_low){
                solve_hmMDP = TRUE,
                file_pomdpx_index=file_pomdpx_AM(costDev_P1, tr_low_low,tr_high_low, initial_belief_benef_low, initial_belief_benef_high),
                file_outpolicy_index=file_outpolicy_AM(costDev_P1, tr_low_low,tr_high_low, initial_belief_benef_low, initial_belief_benef_high),
-               initial_belief_preset=TRUE
+               initial_belief_preset=initial_belief_benef
     )
 
     ## Estimating reward value AM

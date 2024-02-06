@@ -31,7 +31,7 @@ interp_policy2 <- function (belief_state_momdp, obs, alpha, alpha_action, alpha_
   # alpha_obs: obsevations as returned by read_policyx2
   # alpha_obs: indexes as returned by read_policyx2
 
-  # output: optimal action as integer
+  # output: list of: value function, optimal action as integer, index of corresponding alpha vector
 
   id <- which(alpha_obs == obs)
   alpha2 <- alpha[,id]
@@ -47,6 +47,28 @@ interp_policy2 <- function (belief_state_momdp, obs, alpha, alpha_action, alpha_
   output
 }
 
+get_policy <- function(belief_state_momdp, alpha){
+  #inputs:
+  # belief_state_momdp: vector, prior on partially observable variables length Num_mod
+  # alpha: output of read_policyx2
+
+  #output: optimal policy as string "action_unhealthy - action_healthy"
+
+  action_unhealthy <- interp_policy2(belief_state_momdp,
+                                     obs = 1,
+                                     alpha = alpha$vectors,
+                                     alpha_action = alpha$action,
+                                     alpha_obs = alpha$obs,
+                                     alpha_index = alpha$index)[[2]]
+  action_healthy <- interp_policy2(belief_state_momdp,
+                                   obs = 2,
+                                   alpha = alpha$vectors,
+                                   alpha_action = alpha$action,
+                                   alpha_obs = alpha$obs,
+                                   alpha_index = alpha$index)[[2]]
+
+  return(paste0(action_unhealthy,"-",action_healthy))
+}
 update_belief <- function(belief_state_momdp, transition, observation, z0, a0){
   #inputs:
   # belief_state_momdp: vector, prior on partially observable variables

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0.1_0.9trans0.64_0.1belief_benefadaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="4" numObsValue="2" numVectors="50">
+<Vector action="1" obsValue="0">6.46662 7.21236 7.33682 8.13209 </Vector>
+<Vector action="0" obsValue="0">7.30642 7.49491 7.34031 7.8012 </Vector>
+<Vector action="0" obsValue="0">7.26957 7.55261 7.32978 7.98338 </Vector>
+<Vector action="0" obsValue="0">7.27028 7.63138 7.32136 8.03365 </Vector>
+<Vector action="0" obsValue="0">7.2725 7.71815 7.31451 8.04389 </Vector>
+<Vector action="0" obsValue="0">7.27431 7.78805 7.30893 8.05118 </Vector>
+<Vector action="0" obsValue="0">7.33337 7.71693 7.33766 7.81726 </Vector>
+<Vector action="0" obsValue="0">7.33579 7.73693 7.33742 7.8187 </Vector>
+<Vector action="0" obsValue="0">7.33601 7.73873 7.3374 7.81883 </Vector>
+<Vector action="0" obsValue="0">7.33603 7.73889 7.3374 7.81885 </Vector>
+<Vector action="0" obsValue="0">7.33603 7.73891 7.3374 7.81885 </Vector>
+<Vector action="0" obsValue="0">7.33836 7.72013 7.33894 7.78033 </Vector>
+<Vector action="0" obsValue="0">7.33857 7.71844 7.33907 7.77686 </Vector>
+<Vector action="0" obsValue="0">7.31465 7.91523 7.31738 8.02692 </Vector>
+<Vector action="0" obsValue="0">7.30719 7.93488 7.31059 8.05115 </Vector>
+<Vector action="0" obsValue="0">7.30256 7.96673 7.30572 8.05838 </Vector>
+<Vector action="0" obsValue="0">7.2988 7.98652 7.30177 8.06276 </Vector>
+<Vector action="0" obsValue="0">7.29574 8.00215 7.29855 8.06621 </Vector>
+<Vector action="0" obsValue="0">7.29324 8.01741 7.29591 8.0696 </Vector>
+<Vector action="0" obsValue="0">7.31442 7.96949 7.3164 8.03542 </Vector>
+<Vector action="0" obsValue="0">7.35456 7.35529 7.35456 7.35469 </Vector>
+<Vector action="0" obsValue="0">7.33807 7.78702 7.33852 7.81681 </Vector>
+<Vector action="0" obsValue="0">7.32564 7.93944 7.32645 7.97799 </Vector>
+<Vector action="1" obsValue="1">6.83449 7.76207 7.61323 8.50152 </Vector>
+<Vector action="1" obsValue="1">7.58588 7.81856 7.62773 8.19671 </Vector>
+<Vector action="1" obsValue="1">7.54567 7.8742 7.61624 8.37194 </Vector>
+<Vector action="1" obsValue="1">7.51447 7.89709 7.60734 8.44333 </Vector>
+<Vector action="1" obsValue="1">7.55064 7.96504 7.60701 8.41376 </Vector>
+<Vector action="1" obsValue="1">7.55317 8.03048 7.59988 8.41844 </Vector>
+<Vector action="1" obsValue="1">7.5533 8.06341 7.59949 8.42081 </Vector>
+<Vector action="1" obsValue="1">7.60705 8.22078 7.61224 8.34837 </Vector>
+<Vector action="1" obsValue="1">7.62443 8.07708 7.62597 8.16685 </Vector>
+<Vector action="1" obsValue="1">7.6093 8.2295 7.61202 8.349 </Vector>
+<Vector action="1" obsValue="1">7.6273 8.0539 7.62786 8.1193 </Vector>
+<Vector action="1" obsValue="1">7.59934 8.28048 7.6025 8.40722 </Vector>
+<Vector action="1" obsValue="1">7.59119 8.29944 7.5951 8.43053 </Vector>
+<Vector action="1" obsValue="1">7.5824 8.35048 7.58572 8.43981 </Vector>
+<Vector action="1" obsValue="1">7.58219 8.35747 7.5855 8.44137 </Vector>
+<Vector action="1" obsValue="1">7.579 8.36885 7.58214 8.44387 </Vector>
+<Vector action="1" obsValue="1">7.57883 8.37457 7.58196 8.44514 </Vector>
+<Vector action="1" obsValue="1">7.57623 8.38365 7.57922 8.44714 </Vector>
+<Vector action="1" obsValue="1">7.57609 8.38821 7.57907 8.44816 </Vector>
+<Vector action="1" obsValue="1">7.57608 8.39051 7.57907 8.44867 </Vector>
+<Vector action="1" obsValue="1">7.57608 8.39167 7.57907 8.44893 </Vector>
+<Vector action="1" obsValue="1">7.57396 8.39831 7.57684 8.45039 </Vector>
+<Vector action="1" obsValue="1">7.60012 8.34216 7.60226 8.4111 </Vector>
+<Vector action="1" obsValue="1">7.59178 8.38264 7.59403 8.43774 </Vector>
+<Vector action="0" obsValue="1">7.64525 7.6461 7.64525 7.64539 </Vector>
+<Vector action="1" obsValue="1">7.62673 8.13114 7.62723 8.16456 </Vector>
+<Vector action="1" obsValue="1">7.61276 8.30238 7.61367 8.34565 </Vector>
+</AlphaVector> </Policy>
