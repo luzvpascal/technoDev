@@ -23,7 +23,9 @@ for (coeffDev_index in c(0.01, 0.001, 0.0001)){
     value_noRD <- c(steady_states%*%c(V_min, V_max))
 
     ## Estimating reward value AM
-    value_AM_infty <- c(analytical_Wready(tr_low_low,tr_high_low, costImp_P1_index, initial_belief_benef_low, initial_belief_benef_high)[[1]])
+    value_AM_infty <- c(analytical_Wready(tr_low_low,tr_high_low,
+                                          costImp_P1_index,
+                                          initial_belief_benef_low, initial_belief_benef_high)[[1]])
     ####################
     ##belief switch ####
     ####################

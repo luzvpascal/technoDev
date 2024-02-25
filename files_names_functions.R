@@ -29,11 +29,10 @@ file_outpolicy_AM <- function(costDev, p1,p2,belief_benef_low,belief_benef_high)
                 "adaptive_management.policyx"))
 }
 
-file_outpolicy_AM_analytical <- function(costDev, p1,p2,belief_benef_low,belief_benef_high){
+file_outpolicy_AM_analytical <- function(costImp, p1,p2){
   return(paste0("res/policyx_analytical/AM/",
-                costDev, "cost",
+                costImp, "cost",
                 p1,"_", p2,"trans",
-                belief_benef_low,"_",belief_benef_high,"belief_benef",
                 "adaptive_management_analytical.policyx"))
 }
 

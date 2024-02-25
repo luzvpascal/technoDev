@@ -202,10 +202,10 @@ write_alpha_vectors_analytical <- function(p1,p2,costImp_P1_index){
                     '</Vector>')
   #a2a1 high
   a2a1high <- paste0('<Vector action="0" obsValue="1">',
-                    valA1A2_high(p1,(1+p2)/2,costImp_P1_index)," ",
-                    valA1A2_high(p1,(p2)/2,costImp_P1_index)," ",
-                    valA1A2_high(p1,(1+p2)/2,costImp_P1_index)," ",
-                    valA1A2_high(p1,(p2)/2,costImp_P1_index)," ",
+                    valA2A1_high((1+p1)/2,p2,costImp_P1_index)," ",
+                    valA2A1_high((1+p1)/2,p2,costImp_P1_index)," ",
+                    valA2A1_high((p1)/2,p2,costImp_P1_index)," ",
+                    valA2A1_high((p1)/2,p2,costImp_P1_index)," ",
                     '</Vector>')
   #a2a2 low
   a2a2low <- paste0('<Vector action="1" obsValue="0">',
