@@ -142,28 +142,24 @@ coeffs_initial_belief_benefits_low <- seq(0,1, length.out=51)
 coeffs_initial_belief_benefits_high <- seq(0,1, length.out=51)
 
 heatmap_maxTime_file_varying_priors <- paste("res/initial belief benefits/",coeffDev,"cost",0.5,"belief","heatmapMaxTime preset priors.csv", sep="")
-heatmap_maxTime_figure_varying_priors <- paste("res/figures paper/initial belief benefits/",coeffDev,"cost",0.5,"belief","heatmapMaxTime preset priors.svg", sep="")
+heatmap_maxTime_figure_varying_priors <- paste("res/figures paper/initial belief benefits/4 profiles",coeffDev,"cost",0.5,"belief","heatmapMaxTime preset priors.svg", sep="")
 
 AM_strategy_varying_priors_file <- paste("res/initial belief benefits/",coeffDev,"cost", 0.5,"belief","_AM_strategy.csv", sep="")
-AM_strategy_varying_priors_figure <- paste("res/figures paper/initial belief benefits/",coeffDev,"cost", 0.5,"belief","_AM_strategy.svg", sep="")
+# AM_strategy_varying_priors_figure <- paste("res/figures paper/initial belief benefits/",coeffDev,"cost", 0.5,"belief","_AM_strategy.svg", sep="")
 
 heatmap_maxTime_overlap_AM_strategy_figure_varying_priors <- paste("res/figures paper/initial belief benefits/",
                                                                    coeffDev,"cost",0.5,"belief","heatmapMaxTime overlap preset priors.svg", sep="")
 
-##single example at 0.5 0.5
+##single example GBR
 AM_strategy_varying_priors_example_figure <- paste("res/figures paper/initial belief benefits/",
                                            coeffDev,"cost", 0.5,"belief","_AM_strategy_example.svg", sep="")
 
-expected_value_varying_priors_example_figure <- paste("res/figures paper/initial belief benefits/",
-                                                   coeffDev,"cost", 0.5,"belief","_expected_value_example.svg", sep="")
-
-heatmap_maxTime_varying_priors_example_figure <- paste("res/figures paper/initial belief benefits/",
-                                                      coeffDev,"cost", 0.5,"belief","_heatmapMaxTime_example.svg", sep="")
+results_varying_priors_example_file <- paste("res/initial belief benefits/",
+                                                      coeffDev,"cost", 0.5,"belief","_expected_value_example.csv", sep="")
 #analytical
 AM_strategy_varying_priors_example_figure_analytical <- paste("res/figures paper/initial belief benefits/",
                                                    coeffDev,"cost", 0.5,"belief","_AM_strategy_example_analytical.svg", sep="")
-expected_value_varying_priors_example_figure_analytical <- paste("res/figures paper/initial belief benefits/",
-                                                      coeffDev,"cost", 0.5,"belief","_expected_value_example_analytical.svg", sep="")
 
-heatmap_maxTime_varying_priors_example_figure_analytical <- paste("res/figures paper/initial belief benefits/",
-                                                       coeffDev,"cost", 0.5,"belief","_heatmapMaxTime_example_analytical.svg", sep="")
+results_varying_priors_example_file_analytical <- paste("res/initial belief benefits/",
+                                             coeffDev,"cost", 0.5,"belief","_expected_value_example_analytical.csv", sep="")
+
