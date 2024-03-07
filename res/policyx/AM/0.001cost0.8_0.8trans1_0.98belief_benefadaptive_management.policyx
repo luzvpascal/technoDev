@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0.8_0.8trans1_0.98belief_benefadaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="4" numObsValue="2" numVectors="4">
+<Vector action="0" obsValue="0">5.89914 5.89959 5.89959 5.89689 </Vector>
+<Vector action="1" obsValue="0">5.44321 5.80653 6.85371 7.68939 </Vector>
+<Vector action="0" obsValue="1">6.39914 6.39959 6.39959 6.39689 </Vector>
+<Vector action="1" obsValue="1">5.94351 6.71248 7.19827 8.18894 </Vector>
+</AlphaVector> </Policy>

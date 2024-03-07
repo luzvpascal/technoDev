@@ -11,7 +11,7 @@ gamma <- 0.9 #discount factor
 V_max <- 1 # the reef is worth 1 trillion dol
 V_min <- 0.5*V_max
 coeffDev <- 0.001
-coeffDeploy <- 5
+coeffDeploy <- 2
 
 costDev_P1 <- coeffDev*V_max #might be even smaller
 
@@ -27,14 +27,17 @@ rew_mdp_P1 <- matrix(c(0,0,-costDev_P1,-costImp_P1), nrow = 2)
 
 reward_MDP <- reward_MDP_full_info(reward_reef, rew_mdp_P1)
 
+## transitions reef ####
+tr_nothing <- matrix(c(0.8, 0.2, 0.8, 0.2), ncol=2, byrow = TRUE)
+
 ## specifications technologies ####
-prob_ready <- 0.9
+prob_idle_idle <- 0.9
 
 ##initial beliefs####
 initial_belief_state_P1 <- rep(1/2,2) #initial belief tech feasible
 
-initial_belief_benef_low <- 0.8 #initial belief tech beneficial when low
-initial_belief_benef_high <- 0.8 #initial belief tech beneficial when high
+initial_belief_benef_low <- 0.5 #initial belief tech beneficial when low
+initial_belief_benef_high <- 0.5 #initial belief tech beneficial when high
 initial_belief_benef <- c( #initial belief tech beneficial
   (1-initial_belief_benef_low)*(1-initial_belief_benef_high), ##initial belief do nothing better than tech
   (1-initial_belief_benef_low)*(initial_belief_benef_high),##initial belief tech better than do nothing high
@@ -42,24 +45,76 @@ initial_belief_benef <- c( #initial belief tech beneficial
   (initial_belief_benef_low)*(initial_belief_benef_high)##initial belief tech better than do nothing
 )
 
-
 ##reward file name####
 reward_ready_file <- paste0("res/rewards/reward_",coeffDev,".csv") #for MCUAMS
 write.table(reward_reef+matrix(c(0,0,-costImp_P1,-costImp_P1), ncol=2),
             reward_ready_file, col.names = FALSE,
             row.names = FALSE, sep = ",")
 
-## transitions reef ####
-tr_nothing <- matrix(c(0.8, 0.2, 0.8, 0.2), ncol=2, byrow = TRUE)
 
 #solve hmMDP parameters ####
-solve_hmMDP <- TRUE
-timeout <- 500 #set timeout for solving
-precision <- 1e-2
-
 runMCUAMS <- TRUE #change to run MC UAMS
+solve_hmMDP <- TRUE
+timeout <- 60 #set timeout for solving
+precision <-1e-2
 
-## performance simulations parameters ####
+
+############################################
+## 2 initial belief benefits deployment ####
+############################################
+coeffs_initial_belief_benefits_low <- seq(0,1, 0.02)
+coeffs_initial_belief_benefits_high <- seq(0,1,  0.02)
+Tmax_SIM <- 1000 #number of time steps considered in the simulations
+
+combination_beliefs <- expand.grid(coeffs_initial_belief_benefits_low,
+                                   coeffs_initial_belief_benefits_high)
+names(combination_beliefs) <- c("belief_benef_low","belief_benef_high")
+sample_tested_beliefs <- combination_beliefs %>%
+  mutate(bA1A1 = (1-belief_benef_low)*(1-belief_benef_high),
+         bA1A2 = (1-belief_benef_low)*(belief_benef_high),
+         bA2A1 = (belief_benef_low)*(1-belief_benef_high),
+         bA2A2 = (belief_benef_low)*(belief_benef_high))
+sample_tested_beliefs <- unname(as.matrix(sample_tested_beliefs[-c(1,2)]))
+
+##numerical single example GBR
+results_varying_priors_example_file <- paste("res/initial belief benefits/",
+                                             coeffDev,"cost", 0.5,"belief","_results_example.csv", sep="")
+
+results_varying_priors_example_figure <- paste("res/figures paper/initial belief benefits/",
+                                               coeffDev,"cost", 0.5,"belief","_results_example.pdf", sep="")
+
+#analytical
+results_varying_priors_example_file_analytical <- paste("res/initial belief benefits/",
+                                                        coeffDev,"cost", 0.5,"belief","_results_example_analytical.csv", sep="")
+
+results_varying_priors_example_figure_analytical <- paste("res/figures paper/initial belief benefits/",
+                                                          coeffDev,"cost", 0.5,"belief","_results_example_analytical.pdf", sep="")
+
+######################################
+## 3 degradation recovery profiles####
+######################################
+results_4_profiles_file <- paste("res/initial belief benefits/",coeffDev,"cost",0.5,"belief","_4profiles.csv", sep="")
+results_4_profiles_figure <- paste("res/figures paper/initial belief benefits/",
+                                   coeffDev,"cost",0.5,"belief","_4profiles.svg", sep="")
+
+## sup info figure
+profiles_definition_file <- paste("res/profiles/",coeffDev,"cost", 0.5,"belief","_profiles.csv", sep="")
+profiles_definition_figure <- paste("res/figures paper/profiles/",coeffDev,"cost", 0.5,"belief","_profiles.svg", sep="")
+
+##############################################
+## 4 initial belief feasibility and costs ####
+##############################################
+belief_tests <- c(seq(0.001,0.009,0.001),seq(0.01,0.1,0.01), seq(0.2,0.9,0.1), 0.95)
+coeffs_costDev_heatmap <- c(1e-4,1e-3,1e-2,1e-1)
+coeffs_costDep_heatmap <- c(2)
+graph_maxTime_file <- paste("res/stop dev/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.csv", sep="")
+graph_maxTime_file_analytical <- paste("res/stop dev/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying_analytical.csv", sep="")
+graph_maxTime_figure<- paste("res/figures paper/stop dev/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.svg", sep="")
+
+
+#################################
+## 5 performance of policies ####
+#################################
 run_simulations <- TRUE
 average_results <- TRUE #boolean indicating if the simulated trajectories should be averaged or not
 results_performance_file <- paste("res/performance/results_performance.csv", sep="")
@@ -73,93 +128,18 @@ N_tests <- 100 #number of real transitions policy is tested on
 N_sim <- 10000 #number of simulations per instance
 Tmax <- 30 #number of time steps considered in the simulations
 
-###################
-## RD vs no RD?####
-###################
+#############################
+## 6 insights analytical ####
+#############################
+numerical_vs_analytical_figure <-  paste("res/figures paper/6 insights analytical/",coeffDev,
+                                         "cost", 0.5,"belief",
+                                         tr_nothing[1],tr_nothing[2],
+                                         "numerical_vs_analytical.pdf", sep="")
 
-# coeffs_tr_low_low <- seq(0,1, length.out=101)
-# coeffs_tr_high_low <- seq(0,1, length.out=101)
-coeffs_tr_low_low <- seq(0,1, length.out=51)
-coeffs_tr_high_low <- seq(0,1, length.out=51)
-heatmap_valueNoRD_valueRD_varying_transitions_file <- paste("res/RDnoRD/",coeffDev,"cost",
-                                                       prob_ready,"belief","valueNoRD_valueRD.csv", sep="")
-heatmap_valueNoRD_valueRD_varying_transitions_figure <- paste("res/figures paper/RDnoRD/",coeffDev,"cost",
-                                                    prob_ready,"belief","valueNoRD_valueRD.svg", sep="")
-
-heatmap_valueNoRD_valueRD_varying_transitions_file_analytical <- paste("res/RDnoRD/",coeffDev,"cost",
-                                                            prob_ready,"belief","valueNoRD_valueRD_analytical.csv", sep="")
-heatmap_valueNoRD_valueRD_varying_transitions_figure_analytical <- paste("res/figures paper/RDnoRD/",coeffDev,"cost",
-                                                              prob_ready,"belief","valueNoRD_valueRD_analytical.svg", sep="")
-
-######################################################################################################
-## interpreting policy parameters: max time investments varying costs and initial belief feasible ####
-######################################################################################################
-belief_tests <- c(seq(0.001,0.009,0.001),seq(0.01,0.1,0.01), seq(0.2,0.9,0.1), 0.95)
-Tmax_SIM <- 1000 #number of time steps considered in the simulations
-coeffs_costDev_heatmap <- c(0.1,0.05, 0.025, 0.01, 0.005,0.0025, 0.001, 0.0005,0.00025, 0.0001)
-coeffs_costDep_heatmap <- c(5)
-graph_maxTime_file <- paste("res/stop dev/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.csv", sep="")
-graph_maxTime_figure<- paste("res/figures paper/stop dev/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.svg", sep="")
-
-graph_maxTime_file_analytical <- paste("res/stop dev/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying_analytical.csv", sep="")
-###########################################################################################################
-##interpreting policy parameters: max time investments fixed costs, fixed beliefs, varying transitions ####
-###########################################################################################################
-heatmap_maxTime_file_varying_transitions <- paste("res/stop dev/",coeffDev,"cost",0.5,"belief","heatmapMaxTime.csv", sep="")
-heatmap_maxTime_figure_varying_transitions <- paste("res/figures paper/stop dev/",coeffDev,"cost",0.5,"belief","heatmapMaxTime.svg", sep="")
-
-heatmap_maxTime_file_varying_transitions_analytical <- paste("res/stop dev/",coeffDev,"cost",0.5,"belief","heatmapMaxTime analytical.csv", sep="")
-heatmap_maxTime_figure_varying_transitions_analytical <-  paste("res/figures paper/stop dev/",coeffDev,"cost",0.5,"belief","heatmapMaxTime analytical.svg", sep="")
-
-###############################################################################################
-## interpreting policy parameters: max time investments, Expected values of time develoment####
-###############################################################################################
+###########################################
+## 7 Expected values of time develoment####
+###########################################
 prob_ready_tests <- c(seq(0.2,0.9,0.1), 0.95,0.98)
 expected_time_Tmax_file <-  paste("res/stop dev/",coeffDev,"cost", 0.5,"belief",tr_nothing[1],tr_nothing[2],"graph MaxTime expected time varying.csv", sep="")
 analytical_expected_time_Tmax_file <-  paste("res/stop dev/",coeffDev,"cost", 0.5,"belief",tr_nothing[1],tr_nothing[2],"graph MaxTime expected time varying.csv", sep="")
-
-
-############################################################
-## interpreting policy parameters: identifying profiles ####
-############################################################
-profiles_definition_file <- paste("res/profiles/",coeffDev,"cost", 0.5,"belief","_profiles.csv", sep="")
-profiles_definition_figure <- paste("res/figures paper/profiles/",coeffDev,"cost", 0.5,"belief","_profiles.svg", sep="")
-
-
-combination_beliefs <- expand.grid(seq(0,1,length.out=101),seq(0,1,length.out=101))
-names(combination_beliefs) <- c("belief_benef_low","belief_benef_high")
-sample_tested_beliefs <- combination_beliefs %>%
-  mutate(bA1A1 = (1-belief_benef_low)*(1-belief_benef_high),
-         bA1A2 = (1-belief_benef_low)*(belief_benef_high),
-         bA2A1 = (belief_benef_low)*(1-belief_benef_high),
-         bA2A2 = (belief_benef_low)*(belief_benef_high))
-sample_tested_beliefs <- unname(as.matrix(sample_tested_beliefs[-c(1,2)]))
-
-##########################################################################################
-## interpreting policy parameters: influence of initial belief beneifts techno on Tmax####
-###############################################################################################
-coeffs_initial_belief_benefits_low <- seq(0,1, length.out=51)
-coeffs_initial_belief_benefits_high <- seq(0,1, length.out=51)
-
-heatmap_maxTime_file_varying_priors <- paste("res/initial belief benefits/",coeffDev,"cost",0.5,"belief","heatmapMaxTime preset priors.csv", sep="")
-heatmap_maxTime_figure_varying_priors <- paste("res/figures paper/initial belief benefits/4 profiles",coeffDev,"cost",0.5,"belief","heatmapMaxTime preset priors.svg", sep="")
-
-AM_strategy_varying_priors_file <- paste("res/initial belief benefits/",coeffDev,"cost", 0.5,"belief","_AM_strategy.csv", sep="")
-# AM_strategy_varying_priors_figure <- paste("res/figures paper/initial belief benefits/",coeffDev,"cost", 0.5,"belief","_AM_strategy.svg", sep="")
-
-heatmap_maxTime_overlap_AM_strategy_figure_varying_priors <- paste("res/figures paper/initial belief benefits/",
-                                                                   coeffDev,"cost",0.5,"belief","heatmapMaxTime overlap preset priors.svg", sep="")
-
-##single example GBR
-AM_strategy_varying_priors_example_figure <- paste("res/figures paper/initial belief benefits/",
-                                           coeffDev,"cost", 0.5,"belief","_AM_strategy_example.svg", sep="")
-
-results_varying_priors_example_file <- paste("res/initial belief benefits/",
-                                                      coeffDev,"cost", 0.5,"belief","_expected_value_example.csv", sep="")
-#analytical
-AM_strategy_varying_priors_example_figure_analytical <- paste("res/figures paper/initial belief benefits/",
-                                                   coeffDev,"cost", 0.5,"belief","_AM_strategy_example_analytical.svg", sep="")
-
-results_varying_priors_example_file_analytical <- paste("res/initial belief benefits/",
-                                             coeffDev,"cost", 0.5,"belief","_expected_value_example_analytical.csv", sep="")
 

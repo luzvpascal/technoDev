@@ -3,6 +3,6 @@
 <AlphaVector vectorLength="2" numObsValue="2" numVectors="4">
 <Vector action="0" obsValue="0">7.5 7.5 </Vector>
 <Vector action="1" obsValue="0">7.79503 7.49001 </Vector>
-<Vector action="1" obsValue="0">7.79512 7.49001 </Vector>
+<Vector action="1" obsValue="0">7.79511 7.49001 </Vector>
 <Vector action="1" obsValue="1">8.13488 8.13488 </Vector>
 </AlphaVector> </Policy>

@@ -170,7 +170,7 @@
 <Parameter type="TBL">
  <Entry>
 <Instance> - - </Instance>
-<ValueTable>0.95 0.95 0.949 0.95944688016</ValueTable>
+<ValueTable>0.95 0.95 0.949 0.949990446</ValueTable>
 </Entry>
  </Parameter>
 

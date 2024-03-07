@@ -2,7 +2,7 @@
 <Policy version="0.1" type="value" model="res/pomdpx/tech_dev/0.001cost0.8_0.8trans0.88_0.16belief_beneftechdev_adaptive_management1techno.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
 <AlphaVector vectorLength="2" numObsValue="2" numVectors="4">
 <Vector action="0" obsValue="0">6 6 </Vector>
-<Vector action="1" obsValue="0">6.43386 5.99001 </Vector>
-<Vector action="1" obsValue="0">6.43395 5.99001 </Vector>
-<Vector action="1" obsValue="1">6.92803 6.92803 </Vector>
+<Vector action="1" obsValue="0">6.44068 5.99001 </Vector>
+<Vector action="1" obsValue="0">6.44076 5.99001 </Vector>
+<Vector action="1" obsValue="1">6.94233 6.94233 </Vector>
 </AlphaVector> </Policy>

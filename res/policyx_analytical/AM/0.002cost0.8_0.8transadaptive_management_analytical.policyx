@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0.620.38adaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="4" numObsValue="2" numVectors="8">
+<Vector action="0" obsValue="0">5.9 5.9 5.9 5.9 </Vector>
+<Vector action="0" obsValue="1">6.4 6.4 6.4 6.4 </Vector>
+<Vector action="0" obsValue="0">5.82238532110092 6.400625 5.82238532110092 6.400625 </Vector>
+<Vector action="1" obsValue="1">6.27926605504587 7.17875 6.27926605504587 7.17875 </Vector>
+<Vector action="1" obsValue="0">5.47648351648352 5.47648351648352 6.97323529411765 6.97323529411765 </Vector>
+<Vector action="0" obsValue="1">6.02813186813187 6.02813186813187 7.34235294117647 7.34235294117647 </Vector>
+<Vector action="1" obsValue="0">5.43 5.79818181818182 6.84206896551724 7.68 </Vector>
+<Vector action="1" obsValue="1">5.93 6.70727272727273 7.18689655172414 8.18 </Vector>
+</AlphaVector> </Policy>

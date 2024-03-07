@@ -10,7 +10,6 @@ names(results) <- c("tr_low_low",
                      "cost",
                      "coeffDeploy_index")
 results_graph <- results %>%
-  filter(cost %in% c(1e-4,1e-3,1e-2,1e-1)) %>%
   arrange(cost, belief) %>%
   mutate(cost = ifelse(cost==costDev_P1, paste0(cost, " : Great Barrier Reef"), as.character(cost))) %>%
   mutate(cost_fact= factor(cost,
@@ -26,8 +25,8 @@ graph_maxTime <- ggplot(results_graph,
                               'red',
                               "dodgerblue4",
                               "darkblue"))+
-  labs(x = "Initial belief in project feasibility (log-scale)",
-       y = TeX("$T_{max}$: time limit for project development"),
+  labs(x = "Initial belief in technology feasibility (log-scale)",
+       y = TeX("$T_{max}$: time limit for technology development"),
        col = ("Relative cost\nof development"),
        fill=("Relative cost\nof development"))+
   theme_minimal()+

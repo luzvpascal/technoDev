@@ -32,19 +32,22 @@ for (coeffDev_index in coeffs_costDev_heatmap){
     write.table(reward_reef+matrix(c(0,0,-costImp_P1_index,-costImp_P1_index), ncol=2),
                 reward_ready_file_index, col.names = FALSE,
                 row.names = FALSE, sep = ",")
-    solving_AM(compute_mean_params=TRUE,
+    solving_AM(compute_mean_params=runMCUAMS,
                tr_nothing_index,
                reward_ready_file_index,
                output_meanPars_file = output_meanPars_file(costDev_P1_index, tr_low_low,tr_high_low),
                output_priors_file=output_priors_file(costDev_P1_index, tr_low_low,tr_high_low),
-               solve_hmMDP = TRUE,
+               solve_hmMDP = solve_hmMDP,
                file_pomdpx_index=file_pomdpx_AM(costDev_P1_index, tr_low_low,tr_high_low, initial_belief_benef_low, initial_belief_benef_high),
                file_outpolicy_index=file_outpolicy_AM(costDev_P1_index, tr_low_low,tr_high_low, initial_belief_benef_low, initial_belief_benef_high),
-               initial_belief_preset=TRUE
+               initial_belief_preset=initial_belief_benef
     )
 
     ## Estimating reward value AM
-    alphas_AM <- read_policyx2(file_outpolicy_AM(costDev_P1_index, tr_low_low,tr_high_low,initial_belief_benef_low, initial_belief_benef_high)) #alpha vectors
+    alphas_AM <- read_policyx2(file_outpolicy_AM(costDev_P1_index,
+                                                 tr_low_low,tr_high_low,
+                                                 initial_belief_benef_low,
+                                                 initial_belief_benef_high)) #alpha vectors
 
     data_mean_parameters <- read.csv(output_meanPars_file(costDev_P1_index, tr_low_low,tr_high_low))
     initial_belief_AM <- initial_belief_benef[data_mean_parameters$opt]
