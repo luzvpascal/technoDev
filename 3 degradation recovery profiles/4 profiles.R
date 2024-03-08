@@ -6,9 +6,9 @@
 
 ## preset transition matrix if do nothing ####
 profile_possibilities <- c(
-                           "A fast degradation\nfast recovery",
-                           "B fast degradation\nslow recovery",
-                           "C slow degradation\nfast recovery",
+                           # "A fast degradation\nfast recovery",
+                           # "B fast degradation\nslow recovery",
+                           # "C slow degradation\nfast recovery",
                            "D slow degradation\nslow recovery"
                            )
 
@@ -75,7 +75,7 @@ for (profile in profile_possibilities){
     combination_beliefs_index$profile <- profile
     combination_beliefs_index$max_invest <- 0
     ## Tmax calculation ####
-    for (belief_benef_low in coeffs_initial_belief_benefits_low){
+    for (belief_benef_low in coeffs_initial_belief_benefits_low[seq(37,51)]){
       print(belief_benef_low)
       for (belief_benef_high in coeffs_initial_belief_benefits_high){
         ## solving AM ####
@@ -112,7 +112,7 @@ for (profile in profile_possibilities){
         models <- solving_POMDP(prob_idle_idle,
                                 initial_belief_state_P1,
                                 reward_POMDP,
-                                solve_hmMDP = FALSE,
+                                solve_hmMDP = solve_hmMDP,
                                 file_pomdpx_index=file_pomdpx_techdev(costDev_P1,
                                                                       tr_low_low,
                                                                       tr_high_low,
@@ -221,10 +221,10 @@ max_time_heatMap <- ggplot(results,
 # AM strategy figure ###
 results <- results %>%
   mutate(policy = case_when(
-    policy == "1-1" ~ "Do not deploy",
-    policy == "1-2" ~ "Deploy healthy",
-    policy == "2-1" ~ "Deploy unhealthy",
-    policy == "2-2" ~ "Deploy"
+    policy == "1-Jan" ~ "Do not deploy",
+    policy == "1-Feb" ~ "Deploy healthy",
+    policy == "2-Jan" ~ "Deploy unhealthy",
+    policy == "2-Feb" ~ "Deploy"
   ))
 
 AM_strategy_plot <- results %>%
