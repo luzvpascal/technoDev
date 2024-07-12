@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0.9_0.1trans0.88_0belief_benefadaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="4" numObsValue="2" numVectors="50">
+<Vector action="0" obsValue="0">6.6074 6.60631 6.61341 6.6074 </Vector>
+<Vector action="1" obsValue="0">5.31429 6.14696 7.23062 8.8214 </Vector>
+<Vector action="1" obsValue="0">6.5244 6.52136 7.33338 7.31117 </Vector>
+<Vector action="1" obsValue="0">6.44597 6.44116 7.94289 7.91207 </Vector>
+<Vector action="1" obsValue="0">6.3775 6.37109 8.28421 8.25352 </Vector>
+<Vector action="1" obsValue="0">6.51586 6.51283 7.77532 7.73998 </Vector>
+<Vector action="1" obsValue="0">6.51532 6.51229 7.78894 7.75323 </Vector>
+<Vector action="1" obsValue="0">6.51524 6.5122 7.79336 7.75752 </Vector>
+<Vector action="1" obsValue="0">6.21978 6.20944 8.58406 8.56133 </Vector>
+<Vector action="1" obsValue="0">6.26178 6.25262 8.57154 8.54744 </Vector>
+<Vector action="1" obsValue="0">6.31098 6.30313 8.54042 8.51381 </Vector>
+<Vector action="1" obsValue="0">6.36862 6.36222 8.4631 8.43238 </Vector>
+<Vector action="1" obsValue="0">6.43614 6.43134 8.27093 8.23515 </Vector>
+<Vector action="1" obsValue="0">6.43803 6.43323 8.27024 8.23398 </Vector>
+<Vector action="1" obsValue="0">6.37212 6.36573 8.46213 8.43072 </Vector>
+<Vector action="1" obsValue="0">6.31585 6.30802 8.53934 8.51196 </Vector>
+<Vector action="1" obsValue="0">6.26783 6.2587 8.57041 8.5455 </Vector>
+<Vector action="1" obsValue="0">6.22494 6.21464 8.58361 8.56053 </Vector>
+<Vector action="1" obsValue="0">6.18859 6.17724 8.59181 8.56951 </Vector>
+<Vector action="0" obsValue="1">8.39254 8.39202 8.39454 8.39254 </Vector>
+<Vector action="1" obsValue="1">6.1004 8.79738 7.68904 9.6164 </Vector>
+<Vector action="0" obsValue="1">8.25668 8.25263 8.92244 8.91637 </Vector>
+<Vector action="0" obsValue="1">8.24743 8.24313 8.96074 8.95415 </Vector>
+<Vector action="0" obsValue="1">8.23995 8.23544 8.99176 8.98475 </Vector>
+<Vector action="0" obsValue="1">8.23388 8.22921 9.01689 9.00953 </Vector>
+<Vector action="0" obsValue="1">8.22897 8.22417 9.03723 9.02961 </Vector>
+<Vector action="0" obsValue="1">8.38434 8.38365 8.50053 8.49575 </Vector>
+<Vector action="0" obsValue="1">8.37769 8.37686 8.58637 8.57935 </Vector>
+<Vector action="0" obsValue="1">8.37231 8.37136 8.65589 8.64706 </Vector>
+<Vector action="0" obsValue="1">8.36795 8.36691 8.7122 8.70191 </Vector>
+<Vector action="0" obsValue="1">8.36442 8.3633 8.7578 8.74634 </Vector>
+<Vector action="0" obsValue="1">8.36155 8.36037 8.79513 8.78271 </Vector>
+<Vector action="0" obsValue="1">8.35923 8.358 8.82537 8.81217 </Vector>
+<Vector action="0" obsValue="1">8.35734 8.35608 8.84986 8.83604 </Vector>
+<Vector action="0" obsValue="1">8.35582 8.35452 8.86969 8.85537 </Vector>
+<Vector action="0" obsValue="1">8.35459 8.35326 8.88576 8.87103 </Vector>
+<Vector action="0" obsValue="1">8.19403 8.18864 9.32421 9.31403 </Vector>
+<Vector action="0" obsValue="1">8.20072 8.19554 9.32398 9.31364 </Vector>
+<Vector action="0" obsValue="1">8.20615 8.20112 9.32379 9.31331 </Vector>
+<Vector action="0" obsValue="1">8.21054 8.20564 9.32364 9.31305 </Vector>
+<Vector action="0" obsValue="1">8.2141 8.20931 9.32352 9.31284 </Vector>
+<Vector action="0" obsValue="1">8.21698 8.21227 9.32342 9.31267 </Vector>
+<Vector action="0" obsValue="1">8.21931 8.21468 9.32334 9.31254 </Vector>
+<Vector action="0" obsValue="1">8.2212 8.21662 9.32328 9.31242 </Vector>
+<Vector action="0" obsValue="1">8.22274 8.2182 9.32323 9.31233 </Vector>
+<Vector action="0" obsValue="1">8.22398 8.21948 9.32318 9.31226 </Vector>
+<Vector action="0" obsValue="1">8.22498 8.22051 9.32315 9.3122 </Vector>
+<Vector action="0" obsValue="1">8.22579 8.22135 9.32312 9.31215 </Vector>
+<Vector action="0" obsValue="1">8.22645 8.22203 9.3231 9.31211 </Vector>
+<Vector action="0" obsValue="1">8.19139 8.18596 9.3303 9.32023 </Vector>
+</AlphaVector> </Policy>

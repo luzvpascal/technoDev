@@ -6,9 +6,9 @@
 
 ## preset transition matrix if do nothing ####
 profile_possibilities <- c(
-                           # "A fast degradation\nfast recovery",
-                           # "B fast degradation\nslow recovery",
-                           # "C slow degradation\nfast recovery",
+                           "A fast degradation\nfast recovery",
+                           "B fast degradation\nslow recovery",
+                           "C slow degradation\nfast recovery",
                            "D slow degradation\nslow recovery"
                            )
 
@@ -179,46 +179,6 @@ names(results) <- c("belief_benef_low",
                     "policy",
                     "profile",
                     "max_invest")
-
-results$profile <- gsub("-","\n",as.character(results$profile))
-## map #####
-breaks_countour <- c(0.01,seq(10,50,10))
-max_time_heatMap <- ggplot(results,
-                           aes(x = belief_benef_low, y = belief_benef_high)) +
-  geom_raster(aes(fill=max_invest),interpolate = TRUE) +
-  scale_fill_gradient(low = "mistyrose", high = "purple4") +
-  labs(x = TeX("$\\beta^{res}_0$"),
-       y = TeX("$\\beta^{prev}_0$"),
-       fill = TeX("$T_{max}$")) +
-  geom_contour(aes(z = max_invest),
-               binwidth = 10,
-               breaks = breaks_countour,
-               colour = "black") +
-  metR::geom_text_contour(aes(z = max_invest),
-                          breaks = breaks_countour[-1],
-                          min.size = 0,
-                          skip=0,
-                          stroke = 0.1,
-                          rotate = FALSE,
-                          size = 6,
-                          fontface = "bold",
-                          label.placer = metR::label_placer_fraction(frac = 0.6))+
-  # theme_minimal() +
-  coord_equal()+
-  facet_wrap(~profile,nrow=1)+
-  theme_bw()+
-  theme(
-    panel.grid = element_blank(),
-    axis.text=element_text(size=12),
-    axis.title = element_text(size=16),
-    legend.text=element_text(size=13),
-    legend.title=element_text(size=14),
-    strip.text = element_text(size=14),
-    panel.spacing = unit(2, "lines"),
-    legend.position="bottom"
-  )
-
-# AM strategy figure ###
 results <- results %>%
   mutate(policy = case_when(
     policy == "1-Jan" ~ "Do not deploy",
@@ -227,40 +187,142 @@ results <- results %>%
     policy == "2-Feb" ~ "Deploy"
   ))
 
-AM_strategy_plot <- results %>%
-  mutate(policy = factor(policy, levels=c("Do not deploy",
-                                          "Deploy healthy",
-                                          "Deploy unhealthy",
-                                          "Deploy")))%>%
-  ggplot()+
-  geom_raster( aes(x=belief_benef_low, y=belief_benef_high, fill=policy))+
-  scale_fill_manual(values = c("red",
-                               "dodgerblue3",
-                               "goldenrod1",
-                               "darkgreen"))+
-  coord_equal()+
-  theme_bw()+
-  theme(
-    panel.grid = element_blank(),
-    axis.text=element_text(size=12),
-    axis.title = element_text(size=16),
-    legend.text=element_text(size=12),
-    legend.title=element_text(size=14),
-    strip.text = element_text(size=14),
-    panel.spacing = unit(2, "lines")
-  ) +
-  facet_wrap(~profile,nrow=1)+
-  labs(x = TeX("$\\beta^{res}$"),
-       y = TeX("$\\beta^{prev}$"),
-       fill = "Adaptive\ndeployment strategy"
-  )
-print(AM_strategy_plot)
+## Tmax plot ####
+# Initialize an empty list to store the plots
+plots_Tmax <- list()
 
-## joining the 2 figures ####
-fig <- ggarrange(max_time_heatMap,
-                 AM_strategy_plot,
-                 nrow=2,
-                 align = "hv")
-fig
+breaks_countour_Tmax <- c(1,20,30,40)
+# Iterate through each unique value of "profile"
+for (i in seq_along(unique(results$profile))) {
+  # Get the current profile
+  prof <- unique(results$profile)[i]
+
+  # Subset the data for the current profile
+  subset_data <- results %>%
+    filter(profile == prof)
+
+  # Create a plot for the current profile
+  plot <- subset_data %>%
+    ggplot(aes(x = belief_benef_low, y = belief_benef_high)) +
+    geom_raster(aes(fill=max_invest),interpolate = TRUE) +
+    scale_fill_gradient(low = "white", high = "purple4") +
+    geom_contour(aes(z = max_invest),
+                 binwidth = 10,
+                 breaks = breaks_countour_Tmax,
+                 colour = "black") +
+    metR::geom_text_contour(aes(z = max_invest),
+                            breaks = breaks_countour_Tmax,
+                            min.size = 0,
+                            skip=0,
+                            stroke = 0.1,
+                            rotate = FALSE,
+                            size = 5,
+                            fontface = "bold",
+                            label.placer = metR::label_placer_fraction(frac = 0.3))+
+    coord_equal() +
+    theme_bw() +
+    theme(
+      legend.position = "none",  # Remove legend
+      text = element_text(size = 20),
+      title=element_text(size=12),
+      legend.title=element_text(size=18),
+      axis.title=element_text(size=18),
+      strip.background = element_blank(),
+      strip.text.x = element_blank()
+    ) +
+    scale_x_continuous(breaks = c(0,0.5,1)) +
+    labs(x = TeX("$\\beta^{r}_0$ (restoration)"),
+         y = ifelse(i == 1, TeX("$\\beta^{p}_0$ (prevention)"), ""),  # Conditionally add y-axis title
+         title = prof  # Add a title with the current profile
+    )
+  if (i !=1){
+    plot <- plot +
+      theme(axis.text.y = element_blank(),
+            axis.ticks.y = element_blank())
+  } else {
+    plot <- plot +
+      scale_y_continuous(breaks = c(0,0.5,1))
+  }
+  # Append the plot to the list of plots
+  plots_Tmax[[prof]] <- plot
+}
+legend_plot_Tmax <- plot + theme(legend.position = "right") +
+  labs(fill=TeX("$T_{max}$"))
+legend_plot_Tmax <- get_legend( legend_plot_Tmax )
+## AM plot ####
+# Initialize an empty list to store the plots
+plots_AM <- list()
+
+# Iterate through each unique value of "profile"
+for (i in seq_along(unique(results$profile))) {
+  # Get the current profile
+  prof <- unique(results$profile)[i]
+
+  # Subset the data for the current profile
+  subset_data <- results %>%
+    filter(profile == prof)
+
+  # Create a plot for the current profile
+  plot <- subset_data %>%
+    mutate(policy = factor(policy, levels = c("Do not deploy", "Deploy healthy", "Deploy unhealthy", "Deploy"))) %>%
+    ggplot() +
+    geom_raster(aes(x = belief_benef_low, y = belief_benef_high, fill = policy)) +
+    scale_fill_manual(values = c("black", "red", "cyan2", "palegreen")) +
+    coord_equal() +
+    theme_bw() +
+    theme(
+      legend.position = "none",  # Remove legend
+      text = element_text(size = 20),
+      title=element_text(size=12),
+      legend.title=element_text(size=18),
+      axis.title=element_text(size=18),
+      strip.background = element_blank(),
+      strip.text.x = element_blank()
+    ) +
+    scale_x_continuous(breaks = c(0,0.5,1)) +
+    labs(x = TeX("$\\beta^{r}_t$ (restoration)"),
+         y = ifelse(i == 1, TeX("$\\beta^{p}_t$ (prevention)"), ""),  # Conditionally add y-axis title
+         title = ""  # Add a title with the current profile
+    )
+  if (i !=1){
+    plot <- plot +
+      theme(axis.text.y = element_blank(),
+            axis.ticks.y = element_blank())
+  } else {
+    plot <- plot +
+      scale_y_continuous(breaks = c(0,0.5,1))
+  }
+  # Append the plot to the list of plots
+  plots_AM[[prof]] <- plot
+}
+legend_plot_AM <- plot +
+  guides(fill = guide_legend(byrow = TRUE,
+                             nrow=4,
+                             legend.title="none"))+
+  theme(legend.position= "bottom",
+        legend.box = "vertical",
+        legend.key.width= unit(0.3, 'cm')) +
+  labs(fill="")
+legend_plot_AM <- get_legend( legend_plot_AM )
+# Now, plots is a list of plots, where each element corresponds to a unique value of "profile"
+
+# Plot the list of plots in a grid
+a <- plot_grid(plotlist = plots_Tmax, ncol = 4, align = "hv")
+a <- plot_grid(a,legend_plot_Tmax, rel_widths = c(4,1))
+b <- plot_grid(plotlist = plots_AM, ncol = 4, align = "hv")
+b <- plot_grid(b,legend_plot_AM, rel_widths = c(4,1))
+FIG <- ggarrange(a,b,nrow=2)
+
+# Calculate x-coordinates for the dotted line
+n_plots <- 4  # Number of plots
+plot_width <- 0.2  # Width of each plot
+start <- 0.23
+x_coords <- seq(start, start+plot_width * (n_plots - 1), by = plot_width)
+
+# Add dotted lines between plots
+for (x_coord in x_coords[-n_plots]) {
+  FIG <- FIG + geom_vline(xintercept = x_coord, linetype = "dotted", color = "grey")
+}
+
 ggsave(results_4_profiles_figure,
-       plot = fig, width = 15, height = 6, units = "in")
+       plot = FIG, height = 7, width = 14, units = "in")

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0.1_0.9trans0.42_0.28belief_benefadaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="4" numObsValue="2" numVectors="50">
+<Vector action="1" obsValue="0">6.46953 7.21408 7.3328 8.13787 </Vector>
+<Vector action="0" obsValue="0">7.30631 7.49633 7.33967 7.80589 </Vector>
+<Vector action="0" obsValue="0">7.30023 7.60033 7.32888 7.93573 </Vector>
+<Vector action="0" obsValue="0">7.33213 7.7971 7.33267 7.84137 </Vector>
+<Vector action="0" obsValue="0">7.3172 7.93937 7.3181 7.99517 </Vector>
+<Vector action="0" obsValue="0">7.31991 7.93645 7.32037 7.98977 </Vector>
+<Vector action="0" obsValue="0">7.33804 7.7732 7.33781 7.80739 </Vector>
+<Vector action="0" obsValue="0">7.32583 7.92843 7.32541 7.9724 </Vector>
+<Vector action="0" obsValue="0">7.31739 7.97942 7.31683 8.02558 </Vector>
+<Vector action="0" obsValue="0">7.32576 7.92951 7.32534 7.97351 </Vector>
+<Vector action="0" obsValue="0">7.33807 7.77305 7.33783 7.80715 </Vector>
+<Vector action="0" obsValue="0">7.3268 7.93753 7.32633 7.96532 </Vector>
+<Vector action="0" obsValue="0">7.31743 8.00642 7.3168 8.03237 </Vector>
+<Vector action="0" obsValue="0">7.30942 8.03663 7.30864 8.06202 </Vector>
+<Vector action="0" obsValue="0">7.31659 8.01262 7.31594 8.0384 </Vector>
+<Vector action="0" obsValue="0">7.32581 7.95031 7.32532 7.97852 </Vector>
+<Vector action="0" obsValue="0">7.30312 8.0493 7.3022 8.07315 </Vector>
+<Vector action="0" obsValue="0">7.29936 8.05327 7.29836 8.07622 </Vector>
+<Vector action="0" obsValue="0">7.29862 8.05559 7.2976 8.07751 </Vector>
+<Vector action="0" obsValue="0">7.29575 8.05756 7.29466 8.07884 </Vector>
+<Vector action="0" obsValue="0">7.29349 8.05896 7.29234 8.07972 </Vector>
+<Vector action="0" obsValue="0">7.29835 8.05746 7.29732 8.07866 </Vector>
+<Vector action="0" obsValue="0">7.35424 7.35496 7.35424 7.35436 </Vector>
+<Vector action="0" obsValue="0">7.33801 7.80497 7.33774 7.82293 </Vector>
+<Vector action="0" obsValue="0">7.32579 7.96383 7.3253 7.98534 </Vector>
+<Vector action="0" obsValue="0">7.31586 8.02664 7.31519 8.04785 </Vector>
+<Vector action="0" obsValue="0">7.30839 8.0492 7.30757 8.06972 </Vector>
+<Vector action="1" obsValue="1">6.8373 7.76446 7.609 8.50782 </Vector>
+<Vector action="1" obsValue="1">7.58575 7.82031 7.62694 8.20251 </Vector>
+<Vector action="1" obsValue="1">7.54548 7.87657 7.61489 8.37856 </Vector>
+<Vector action="1" obsValue="1">7.58353 7.93296 7.6152 8.31259 </Vector>
+<Vector action="1" obsValue="1">7.60662 8.29869 7.60708 8.35828 </Vector>
+<Vector action="1" obsValue="1">7.62672 8.11542 7.62645 8.15369 </Vector>
+<Vector action="1" obsValue="1">7.60255 8.35296 7.6019 8.40502 </Vector>
+<Vector action="1" obsValue="1">7.59541 8.3732 7.59463 8.42574 </Vector>
+<Vector action="1" obsValue="1">7.59453 8.40191 7.59371 8.43766 </Vector>
+<Vector action="1" obsValue="1">7.61302 8.30713 7.6125 8.34333 </Vector>
+<Vector action="1" obsValue="1">7.59457 8.41263 7.59369 8.4403 </Vector>
+<Vector action="1" obsValue="1">7.6025 8.38528 7.60176 8.41418 </Vector>
+<Vector action="1" obsValue="1">7.58688 8.42664 7.58583 8.45336 </Vector>
+<Vector action="1" obsValue="1">7.58282 8.43069 7.58168 8.45634 </Vector>
+<Vector action="1" obsValue="1">7.58266 8.4328 7.58152 8.45739 </Vector>
+<Vector action="1" obsValue="1">7.57885 8.4353 7.57762 8.45909 </Vector>
+<Vector action="1" obsValue="1">7.58238 8.43495 7.58124 8.45872 </Vector>
+<Vector action="1" obsValue="1">7.57834 8.43819 7.5771 8.46086 </Vector>
+<Vector action="0" obsValue="1">7.6449 7.64574 7.6449 7.64503 </Vector>
+<Vector action="1" obsValue="1">7.62666 8.15179 7.62636 8.17177 </Vector>
+<Vector action="1" obsValue="1">7.61293 8.33043 7.61237 8.35433 </Vector>
+<Vector action="1" obsValue="1">7.60178 8.40106 7.60103 8.42451 </Vector>
+<Vector action="1" obsValue="1">7.59338 8.42599 7.59246 8.44886 </Vector>
+</AlphaVector> </Policy>

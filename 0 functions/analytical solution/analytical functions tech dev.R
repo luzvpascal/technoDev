@@ -19,11 +19,15 @@ max_years <- function(belief_init,
   #belief_init: initial belief state, initial belief in project feasibility
   #p_idle: probability of staying idle after investing
   #belief_IS belief where policy changes
-  if (belief_init>=belief_IS){
-    return(max((log((1-belief_init)*belief_IS) -
-             log(belief_init*(1-p_idle*belief_IS)))/
-             log(p_idle)
-           , 0 ))
+  if (belief_IS>=0){
+    if (belief_init>=belief_IS){
+      return(max((log((1-belief_init)*belief_IS) -
+                    log(belief_init*(1-p_idle*belief_IS)))/
+                   log(p_idle)
+                 , 0 ))
+    } else {
+      return(0)
+    }
   } else {
     return(0)
   }

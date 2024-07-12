@@ -36,8 +36,8 @@ prob_idle_idle <- 0.9
 ##initial beliefs####
 initial_belief_state_P1 <- rep(1/2,2) #initial belief tech feasible
 
-initial_belief_benef_low <- 0.5 #initial belief tech beneficial when low
-initial_belief_benef_high <- 0.5 #initial belief tech beneficial when high
+initial_belief_benef_low <- 0.8 #initial belief tech beneficial when low
+initial_belief_benef_high <- 0.8 #initial belief tech beneficial when high
 initial_belief_benef <- c( #initial belief tech beneficial
   (1-initial_belief_benef_low)*(1-initial_belief_benef_high), ##initial belief do nothing better than tech
   (1-initial_belief_benef_low)*(initial_belief_benef_high),##initial belief tech better than do nothing high
@@ -55,8 +55,8 @@ write.table(reward_reef+matrix(c(0,0,-costImp_P1,-costImp_P1), ncol=2),
 #solve hmMDP parameters ####
 runMCUAMS <- TRUE #change to run MC UAMS
 solve_hmMDP <- TRUE
-timeout <- 60 #set timeout for solving
-precision <-1e-2
+timeout <- 10 #set timeout for solving
+precision <-1e-5
 
 
 ############################################
@@ -77,56 +77,54 @@ sample_tested_beliefs <- combination_beliefs %>%
 sample_tested_beliefs <- unname(as.matrix(sample_tested_beliefs[-c(1,2)]))
 
 ##numerical single example GBR
-results_varying_priors_example_file <- paste("res/initial belief benefits/",
+results_varying_priors_example_file <- paste("res/2 initial belief benefits deployment/",
                                              coeffDev,"cost", 0.5,"belief","_results_example.csv", sep="")
 
-results_varying_priors_example_figure <- paste("res/figures paper/initial belief benefits/",
+results_varying_priors_example_figure <- paste("res/figures paper/2 initial belief benefits deployment/",
                                                coeffDev,"cost", 0.5,"belief","_results_example.pdf", sep="")
 
 #analytical
-results_varying_priors_example_file_analytical <- paste("res/initial belief benefits/",
+results_varying_priors_example_file_analytical <- paste("res/2 initial belief benefits deployment/",
                                                         coeffDev,"cost", 0.5,"belief","_results_example_analytical.csv", sep="")
 
-results_varying_priors_example_figure_analytical <- paste("res/figures paper/initial belief benefits/",
+results_varying_priors_example_figure_analytical <- paste("res/figures paper/2 initial belief benefits deployment/",
                                                           coeffDev,"cost", 0.5,"belief","_results_example_analytical.pdf", sep="")
 
 ######################################
 ## 3 degradation recovery profiles####
 ######################################
-results_4_profiles_file <- paste("res/initial belief benefits/",coeffDev,"cost",0.5,"belief","_4profiles.csv", sep="")
-results_4_profiles_figure <- paste("res/figures paper/initial belief benefits/",
+results_4_profiles_file <- paste("res/3 degradation recovery profiles/",coeffDev,"cost",0.5,"belief","_4profiles.csv", sep="")
+results_4_profiles_figure <- paste("res/figures paper/3 degradation recovery profiles/",
                                    coeffDev,"cost",0.5,"belief","_4profiles.svg", sep="")
 
 ## sup info figure
-profiles_definition_file <- paste("res/profiles/",coeffDev,"cost", 0.5,"belief","_profiles.csv", sep="")
-profiles_definition_figure <- paste("res/figures paper/profiles/",coeffDev,"cost", 0.5,"belief","_profiles.svg", sep="")
+profiles_definition_file <- paste("res/3 degradation recovery profiles/",coeffDev,"cost", 0.5,"belief","_profiles.csv", sep="")
+profiles_definition_figure <- paste("res/figures paper/3 degradation recovery profiles/",
+                                    coeffDev,"cost", 0.5,"belief","_profiles.svg", sep="")
 
-##############################################
-## 4 initial belief feasibility and costs ####
-##############################################
+##########################################
+## 4 initial belief success and costs ####
+##########################################
 belief_tests <- c(seq(0.001,0.009,0.001),seq(0.01,0.1,0.01), seq(0.2,0.9,0.1), 0.95)
 coeffs_costDev_heatmap <- c(1e-4,1e-3,1e-2,1e-1)
 coeffs_costDep_heatmap <- c(2)
-graph_maxTime_file <- paste("res/stop dev/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.csv", sep="")
-graph_maxTime_file_analytical <- paste("res/stop dev/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying_analytical.csv", sep="")
-graph_maxTime_figure<- paste("res/figures paper/stop dev/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.svg", sep="")
+graph_maxTime_file <- paste("res/4 initial belief feasibility and costs/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.csv", sep="")
+graph_maxTime_file_analytical <- paste("res/4 initial belief feasibility and costs/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying_analytical.csv", sep="")
+graph_maxTime_figure<- paste("res/figures paper/4 initial belief feasibility and costs/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.svg", sep="")
 
 
-#################################
-## 5 performance of policies ####
-#################################
-run_simulations <- TRUE
-average_results <- TRUE #boolean indicating if the simulated trajectories should be averaged or not
-results_performance_file <- paste("res/performance/results_performance.csv", sep="")
-results_figure <- paste("res/figures paper/performance/",tr_nothing[1],tr_nothing[2],
-                        "results_performance.csv", sep="")
+###########################
+## 5 Tmax vs rdeploy ####
+###########################
+coeffs_r_deploy <-c(seq(0.001,0.009,0.001),seq(0.01,0.1,0.01), seq(0.2,0.9,0.1), 0.95)
+results_tmax_vs_rdeploy_file <- paste("res/5 Tmax vs Rdeploy/",
+                                      coeffDev,"cost", 0.5,"belief","_tmax_vs_rdeploy.csv", sep="")
 
-run_naive <- TRUE #boolean to run naive simulations (non adaptive)
-run_random <- TRUE #boolean to run naive policy (random actions)
-run_optimal <- TRUE #boolean to run naive simulations
-N_tests <- 100 #number of real transitions policy is tested on
-N_sim <- 10000 #number of simulations per instance
-Tmax <- 30 #number of time steps considered in the simulations
+results_tmax_vs_rdeploy_figure <- paste("res/figures paper/5 Tmax vs Rdeploy/",
+                                        coeffDev,"cost", 0.5,"belief","_tmax_vs_rdeploy.pdf", sep="")
+
+results_tmax_vs_rdeploy_supps_figure <- paste("res/figures paper/5 Tmax vs Rdeploy/",
+                                              coeffDev,"cost", 0.5,"belief","_tmax_vs_rdeploy_supps.pdf", sep="")
 
 #############################
 ## 6 insights analytical ####

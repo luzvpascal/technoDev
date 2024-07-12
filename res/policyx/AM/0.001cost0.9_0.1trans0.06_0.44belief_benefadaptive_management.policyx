@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0.9_0.1trans0.06_0.44belief_benefadaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="4" numObsValue="2" numVectors="23">
+<Vector action="1" obsValue="0">5.31368 6.16192 7.23605 8.8351 </Vector>
+<Vector action="1" obsValue="0">6.5254 6.523 7.33458 7.32442 </Vector>
+<Vector action="1" obsValue="0">6.43065 6.44314 7.7491 8.05828 </Vector>
+<Vector action="0" obsValue="0">6.60823 6.60714 6.61424 6.60823 </Vector>
+<Vector action="1" obsValue="1">6.09395 8.80854 7.69522 9.62144 </Vector>
+<Vector action="0" obsValue="1">7.99392 8.25544 8.58732 9.08035 </Vector>
+<Vector action="0" obsValue="1">7.95331 8.24148 8.60685 9.15025 </Vector>
+<Vector action="0" obsValue="1">7.92041 8.23017 8.62267 9.20686 </Vector>
+<Vector action="0" obsValue="1">7.89377 8.22101 8.63548 9.25271 </Vector>
+<Vector action="0" obsValue="1">7.87218 8.21359 8.64586 9.28986 </Vector>
+<Vector action="0" obsValue="1">8.37727 8.37797 8.49749 8.52375 </Vector>
+<Vector action="0" obsValue="1">8.36434 8.36604 8.58032 8.62949 </Vector>
+<Vector action="0" obsValue="1">8.35388 8.35638 8.6474 8.71513 </Vector>
+<Vector action="0" obsValue="1">8.3454 8.34855 8.70173 8.7845 </Vector>
+<Vector action="0" obsValue="1">8.33853 8.34221 8.74574 8.84069 </Vector>
+<Vector action="0" obsValue="1">8.33297 8.33707 8.78138 8.8862 </Vector>
+<Vector action="0" obsValue="1">8.32846 8.33291 8.81024 8.92307 </Vector>
+<Vector action="0" obsValue="1">8.32481 8.32954 8.83362 8.95293 </Vector>
+<Vector action="0" obsValue="1">8.32186 8.32681 8.85255 8.97712 </Vector>
+<Vector action="0" obsValue="1">8.31946 8.3246 8.86789 8.99671 </Vector>
+<Vector action="0" obsValue="1">8.31752 8.32281 8.88031 9.01258 </Vector>
+<Vector action="0" obsValue="1">8.31595 8.32136 8.89037 9.02544 </Vector>
+<Vector action="0" obsValue="1">8.39337 8.39286 8.39538 8.39337 </Vector>
+</AlphaVector> </Policy>

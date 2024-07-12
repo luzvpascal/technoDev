@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0.1_0.1trans0.92_0.02belief_benefadaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="4" numObsValue="2" numVectors="23">
+<Vector action="1" obsValue="0">6.99926 8.67083 7.91271 9.25095 </Vector>
+<Vector action="1" obsValue="0">8.84341 8.84332 9.06922 9.06981 </Vector>
+<Vector action="1" obsValue="0">8.81285 8.81278 9.07585 9.07663 </Vector>
+<Vector action="0" obsValue="0">9.04875 9.0492 9.0492 9.0492 </Vector>
+<Vector action="1" obsValue="0">8.80436 8.8043 9.07851 9.07937 </Vector>
+<Vector action="1" obsValue="0">8.79975 8.79969 9.08027 9.08118 </Vector>
+<Vector action="0" obsValue="1">9.54867 9.54912 9.54912 9.54912 </Vector>
+<Vector action="1" obsValue="1">7.50012 9.58246 8.25726 9.75046 </Vector>
+<Vector action="0" obsValue="1">9.53026 9.53068 9.55101 9.55107 </Vector>
+<Vector action="0" obsValue="1">9.51536 9.51575 9.55255 9.55265 </Vector>
+<Vector action="0" obsValue="1">9.50329 9.50366 9.5538 9.55393 </Vector>
+<Vector action="0" obsValue="1">9.49351 9.49386 9.55481 9.55496 </Vector>
+<Vector action="0" obsValue="1">9.48559 9.48593 9.55562 9.5558 </Vector>
+<Vector action="0" obsValue="1">9.47918 9.4795 9.55628 9.55648 </Vector>
+<Vector action="0" obsValue="1">9.47398 9.47429 9.55682 9.55703 </Vector>
+<Vector action="0" obsValue="1">9.46703 9.46733 9.55785 9.55809 </Vector>
+<Vector action="0" obsValue="1">9.46139 9.46169 9.55869 9.55895 </Vector>
+<Vector action="0" obsValue="1">9.45682 9.45712 9.55936 9.55965 </Vector>
+<Vector action="0" obsValue="1">9.45313 9.45341 9.55991 9.56021 </Vector>
+<Vector action="0" obsValue="1">9.44937 9.44965 9.56059 9.56091 </Vector>
+<Vector action="0" obsValue="1">9.44632 9.44661 9.56115 9.56148 </Vector>
+<Vector action="0" obsValue="1">9.44385 9.44414 9.56159 9.56195 </Vector>
+<Vector action="0" obsValue="1">9.44186 9.44214 9.56196 9.56232 </Vector>
+</AlphaVector> </Policy>

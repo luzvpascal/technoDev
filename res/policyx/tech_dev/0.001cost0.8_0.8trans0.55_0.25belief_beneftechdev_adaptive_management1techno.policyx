@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Policy version="0.1" type="value" model="res/pomdpx/tech_dev/0.001cost0.8_0.8trans0.55_0.25belief_beneftechdev_adaptive_management1techno.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
-<AlphaVector vectorLength="2" numObsValue="2" numVectors="4">
+<AlphaVector vectorLength="2" numObsValue="2" numVectors="41">
+<Vector action="1" obsValue="0">6.27041 5.99 </Vector>
 <Vector action="0" obsValue="0">6 6 </Vector>
-<Vector action="1" obsValue="0">6.26884 5.99001 </Vector>
-<Vector action="1" obsValue="0">6.26893 5.99001 </Vector>
-<Vector action="1" obsValue="1">6.57961 6.57961 </Vector>
+<Vector action="1" obsValue="0">6.05138 5.999 </Vector>
+<Vector action="1" obsValue="0">6.093 5.9981 </Vector>
+<Vector action="1" obsValue="0">6.1267 5.99729 </Vector>
+<Vector action="1" obsValue="0">6.15401 5.99656 </Vector>
+<Vector action="1" obsValue="0">6.17613 5.9959 </Vector>
+<Vector action="1" obsValue="0">6.19404 5.99531 </Vector>
+<Vector action="1" obsValue="0">6.20855 5.99478 </Vector>
+<Vector action="1" obsValue="0">6.22031 5.9943 </Vector>
+<Vector action="1" obsValue="0">6.22983 5.99387 </Vector>
+<Vector action="1" obsValue="0">6.23754 5.99349 </Vector>
+<Vector action="1" obsValue="0">6.24378 5.99314 </Vector>
+<Vector action="1" obsValue="0">6.24884 5.99282 </Vector>
+<Vector action="1" obsValue="0">6.25294 5.99254 </Vector>
+<Vector action="1" obsValue="0">6.25626 5.99229 </Vector>
+<Vector action="1" obsValue="0">6.25895 5.99206 </Vector>
+<Vector action="1" obsValue="0">6.26113 5.99185 </Vector>
+<Vector action="1" obsValue="0">6.26289 5.99167 </Vector>
+<Vector action="1" obsValue="0">6.26432 5.9915 </Vector>
+<Vector action="1" obsValue="0">6.26548 5.99135 </Vector>
+<Vector action="1" obsValue="0">6.26642 5.99122 </Vector>
+<Vector action="1" obsValue="0">6.26718 5.99109 </Vector>
+<Vector action="1" obsValue="0">6.26779 5.99098 </Vector>
+<Vector action="1" obsValue="0">6.26829 5.99089 </Vector>
+<Vector action="1" obsValue="0">6.26869 5.9908 </Vector>
+<Vector action="1" obsValue="0">6.26902 5.99072 </Vector>
+<Vector action="1" obsValue="0">6.26928 5.99065 </Vector>
+<Vector action="1" obsValue="0">6.2695 5.99058 </Vector>
+<Vector action="1" obsValue="0">6.26967 5.99052 </Vector>
+<Vector action="1" obsValue="0">6.26981 5.99047 </Vector>
+<Vector action="1" obsValue="0">6.26993 5.99042 </Vector>
+<Vector action="1" obsValue="0">6.27002 5.99038 </Vector>
+<Vector action="1" obsValue="0">6.27009 5.99034 </Vector>
+<Vector action="1" obsValue="0">6.27016 5.99031 </Vector>
+<Vector action="1" obsValue="0">6.2702 5.99028 </Vector>
+<Vector action="1" obsValue="0">6.27024 5.99025 </Vector>
+<Vector action="1" obsValue="0">6.27028 5.99023 </Vector>
+<Vector action="1" obsValue="0">6.2703 5.9902 </Vector>
+<Vector action="1" obsValue="0">6.27032 5.99018 </Vector>
+<Vector action="1" obsValue="1">6.58198 6.58198 </Vector>
 </AlphaVector> </Policy>

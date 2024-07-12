@@ -26,13 +26,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.97742781"
-     inkscape:cx="514.61601"
-     inkscape:cy="315.62433"
+     inkscape:zoom="1.3822917"
+     inkscape:cx="325.90806"
+     inkscape:cy="401.50716"
      inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg356" />
   <defs
@@ -695,7 +695,10 @@
      style="font-size:16px;font-family:Arial"
      textLength="298.79999"
      lengthAdjust="spacingAndGlyphs"
-     id="text306">Initial belief in project feasibility (log-scale)</text>
+     id="text306"
+     transform="matrix(1.4412372,0,0,1,-120.77127,0)">Initial belief in succesful technology developement (<tspan
+   style="font-style:italic"
+   id="tspan565">b</tspan>  log-scale)</text>
   <text
      transform="rotate(-90,176.615,159.485)"
      style="font-size:16px;font-family:Arial"
@@ -840,6 +843,16 @@
      textLength="17.780001"
      lengthAdjust="spacingAndGlyphs"
      id="text352">0.1</text>
+  <text
+     x="561.84003"
+     y="249.36"
+     style="font-size:12.8px;font-family:Arial;white-space:pre"
+     textLength="17.780001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text352-9"
+     transform="matrix(0.34428904,0,0,0.74628988,232.17026,241.09713)"><tspan
+       style="font-style:italic"
+       id="tspan589">0</tspan></text>
   <text
      x="561.84003"
      y="214.8"

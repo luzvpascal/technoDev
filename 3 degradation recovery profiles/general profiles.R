@@ -48,37 +48,37 @@ res <- res %>%
   group_by(tr_low_low,tr_high_low)%>%
   summarise(max_freq=max(Freq)/sum(Freq),
             max_policy=policy[which.max(Freq)])%>%
+  mutate(tr_low_low=1-tr_low_low)%>%
   mutate(max_policy = case_when(
-    max_policy == "1-Jan" ~ "Never deploy",
+    max_policy == "1-Jan" ~ "Do not deploy",
     max_policy == "1-Feb" ~ "Deploy healthy",
     max_policy == "2-Jan" ~ "Deploy unhealthy",
-    max_policy == "2-Feb" ~ "Always deploy"
+    max_policy == "2-Feb" ~ "Deploy"
   ))
 
 ##figure####
 dominant_policy_plot <- ggplot()+
-  geom_tile(data= filter(res, max_policy == "Never deploy"),
+  geom_tile(data= filter(res, max_policy == "Do not deploy"),
             aes(x = tr_low_low, y = tr_high_low, fill = max_freq))+
-  scale_fill_gradient(low = "lightpink", high = "red", limits = c(0.28,1))+
-  labs(fill=("Never\ndeploy"))+
+  scale_fill_gradient(low = "lightgrey", high = "black", limits = c(0.28,1))+
+  labs(fill=("Do not\ndeploy"))+
   new_scale_fill() +
 
   geom_tile(data= filter(res, max_policy == "Deploy unhealthy"),
             aes(x = tr_low_low, y = tr_high_low, fill = max_freq))+
-  scale_fill_gradient(low = "lightyellow", high = "orange", limits = c(0.28,1))+
+  scale_fill_gradient(low = "lightblue", high = "cyan2", limits = c(0.28,1))+
   labs(fill=TeX("Deploy\nunhealthy"))+
   new_scale_fill() +
 
   geom_tile(data= filter(res, max_policy == "Deploy healthy"),
             aes(x = tr_low_low, y = tr_high_low, fill = max_freq))+
-  scale_fill_gradient(low = "lightblue", high = "darkblue", limits = c(0.28,1))+
+  scale_fill_gradient(low = "lightpink", high = "red", limits = c(0.28,1))+
   labs(fill=TeX("Deploy\nhealthy"))+
   new_scale_fill() +
-
-  geom_tile(data= filter(res, max_policy == "Always deploy"),
+  geom_tile(data= filter(res, max_policy == "Deploy"),
             aes(x = tr_low_low, y = tr_high_low, fill = max_freq))+
-  scale_fill_gradient(low = "lightgreen", high = "darkgreen", limits = c(0.28,1))+
-  labs(fill=TeX("Always\ndeploy"))+
+  scale_fill_gradient(low = "white", high = "palegreen", limits = c(0.28,1))+
+  labs(fill=TeX("Deploy"))+
   theme_bw() +
   theme(
     panel.grid = element_blank()
@@ -87,12 +87,13 @@ dominant_policy_plot <- ggplot()+
   ) +
   coord_equal()+
   labs(
-    x = "Difficulty of recovery\n Pr(unhealthy| unhealthy, BAU)",
+    x = "Recovery rate\n Pr(healthy| unhealthy, BAU)",
     y = "Degradation rate\n Pr(unhealthy| healthy, BAU)"
   )+
   geom_point(data = data.frame(x = c(0.1, 0.9, 0.1,0.9), y = c(0.1, 0.1, 0.9,0.9),
                                policy_max="black"),
              aes(x = x, y = y), color = "black", size = 3)
+
 
 ggsave(profiles_definition_figure,
        plot = dominant_policy_plot, width = 10, height = 6, units = "in")

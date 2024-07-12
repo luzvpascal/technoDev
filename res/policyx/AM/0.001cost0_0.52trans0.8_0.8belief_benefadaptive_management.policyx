@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="res/pomdpx/AM/0.001cost0_0.52trans0.8_0.8belief_benefadaptive_management.pomdpx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="2" numObsValue="2" numVectors="29">
+<Vector action="0" obsValue="0">7.97712 8.24875 </Vector>
+<Vector action="0" obsValue="0">7.96505 8.41571 </Vector>
+<Vector action="0" obsValue="0">8.0656 8.0656 </Vector>
+<Vector action="0" obsValue="0">7.95498 8.4715 </Vector>
+<Vector action="0" obsValue="0">7.95391 8.48526 </Vector>
+<Vector action="0" obsValue="0">7.95376 8.48714 </Vector>
+<Vector action="0" obsValue="0">7.87143 8.58861 </Vector>
+<Vector action="0" obsValue="0">7.77553 8.62026 </Vector>
+<Vector action="0" obsValue="0">7.75568 8.62176 </Vector>
+<Vector action="0" obsValue="0">7.81265 8.61724 </Vector>
+<Vector action="1" obsValue="1">8.32972 8.48304 </Vector>
+<Vector action="1" obsValue="1">8.31274 8.53511 </Vector>
+<Vector action="1" obsValue="1">8.30895 8.57018 </Vector>
+<Vector action="1" obsValue="1">8.3081 8.59381 </Vector>
+<Vector action="1" obsValue="1">8.30791 8.60972 </Vector>
+<Vector action="1" obsValue="1">8.2945 8.79523 </Vector>
+<Vector action="1" obsValue="1">8.19662 8.96111 </Vector>
+<Vector action="0" obsValue="1">8.40622 8.40622 </Vector>
+<Vector action="1" obsValue="1">8.28331 8.85722 </Vector>
+<Vector action="1" obsValue="1">8.28212 8.87251 </Vector>
+<Vector action="1" obsValue="1">8.1913 8.98381 </Vector>
+<Vector action="1" obsValue="1">8.19058 8.98692 </Vector>
+<Vector action="1" obsValue="1">8.28196 8.8746 </Vector>
+<Vector action="1" obsValue="1">8.19048 8.98735 </Vector>
+<Vector action="1" obsValue="1">8.13487 9.01219 </Vector>
+<Vector action="1" obsValue="1">8.08393 9.02251 </Vector>
+<Vector action="1" obsValue="1">8.05192 9.02694 </Vector>
+<Vector action="1" obsValue="1">8.07683 9.0257 </Vector>
+<Vector action="1" obsValue="1">8.12517 9.01916 </Vector>
+</AlphaVector> </Policy>
