@@ -1,21 +1,21 @@
 ## MDP definition ####
-#factored states : reef = bad/good
-#technology P1: idle/ongoing
-#actions: nothing actP1
+#factored states : reef = unhealthy (low) / healthy (high)
+#technology P1: idle/ready
+#actions: nothing develop/deploy
 
 #transitions: unknown for the reefs, except for the action NOTHING
 #known for P1 and P2
 gamma <- 0.9 #discount factor
 
 #reward
-V_max <- 1 # the reef is worth 1 trillion dol
-V_min <- 0.5*V_max
-coeffDev <- 0.001
-coeffDeploy <- 2
+V_max <- 1 #benefit if reef is healthy
+V_min <- 0.5*V_max #benefit if reef is unhealthy
+coeffDev <- 0.001 # cost of development relative to V_max
+coeffDeploy <- 2 #cost of deployment relative to coeffDev
 
-costDev_P1 <- coeffDev*V_max #might be even smaller
+costDev_P1 <- coeffDev*V_max
+costImp_P1 <- coeffDeploy*costDev_P1
 
-costImp_P1 <- coeffDeploy*costDev_P1 #getting massive boats, build labs
 #reward for the reefs depending on development P1 and P2
 #line 1: reefs bad, line 2: reefs good
 #columns: nothing actP1 actP2 actP1P2
@@ -30,14 +30,15 @@ reward_MDP <- reward_MDP_full_info(reward_reef, rew_mdp_P1)
 ## transitions reef ####
 tr_nothing <- matrix(c(0.8, 0.2, 0.8, 0.2), ncol=2, byrow = TRUE)
 
-## specifications technologies ####
-prob_idle_idle <- 0.9
+## transitions technologies ####
+prob_idle_idle <- 0.9 #probability of staying idle
 
 ##initial beliefs####
-initial_belief_state_P1 <- rep(1/2,2) #initial belief tech feasible
+initial_belief_state_P1 <- rep(1/2,2) #initial belief tech successfully developed
 
 initial_belief_benef_low <- 0.8 #initial belief tech beneficial when low
 initial_belief_benef_high <- 0.8 #initial belief tech beneficial when high
+
 initial_belief_benef <- c( #initial belief tech beneficial
   (1-initial_belief_benef_low)*(1-initial_belief_benef_high), ##initial belief do nothing better than tech
   (1-initial_belief_benef_low)*(initial_belief_benef_high),##initial belief tech better than do nothing high
@@ -54,8 +55,9 @@ write.table(reward_reef+matrix(c(0,0,-costImp_P1,-costImp_P1), ncol=2),
 
 #solve hmMDP parameters ####
 runMCUAMS <- TRUE #change to run MC UAMS
+file_MCUAMS <- "C:/Users/N11003324/CLionProjects/MCUAMS/cmake-build-debug/MCUAMS.exe"
 solve_hmMDP <- TRUE
-timeout <- 10 #set timeout for solving
+timeout <- 10 #set timeout for running SARSOP
 precision <-1e-5
 
 

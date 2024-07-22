@@ -13,7 +13,7 @@ steady_states <- steadyStates(markovB)[1,]
 value_noRD <- c(steady_states%*%c(V_min, V_max))
 value_noRD_infty <- value_noRD/(1-gamma)
 
-## solve adaptive management deployment#### #already solved?
+## solve adaptive management deployment####
 tr_low_low <- tr_nothing[1,1]
 tr_high_low <- tr_nothing[2,1]
 solving_AM(compute_mean_params=runMCUAMS,

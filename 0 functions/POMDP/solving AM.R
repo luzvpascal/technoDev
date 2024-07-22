@@ -1,16 +1,16 @@
 solving_AM <- function(compute_mean_params,
-                          tr_nothing_index,
-                          reward_ready_file_index,
-                          output_meanPars_file_index,
-                          output_priors_file_index,
-                          solve_hmMDP,
-                          file_pomdpx_index,
-                          file_outpolicy_index,
-                          initial_belief_preset=NA
+                        tr_nothing_index,
+                        reward_ready_file_index,
+                        output_meanPars_file_index,
+                        output_priors_file_index,
+                        solve_hmMDP,
+                        file_pomdpx_index,
+                        file_outpolicy_index,
+                        initial_belief_preset=NA
 ){
   ## run MCUAMS ####
   if (compute_mean_params){
-    system(paste("C:/Users/N11003324/CLionProjects/MCUAMS/cmake-build-debug/MCUAMS.exe",
+    system(paste(file_MCUAMS,
                  reward_ready_file_index,
                  output_meanPars_file_index,
                  output_priors_file_index,
