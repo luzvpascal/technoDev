@@ -57,3 +57,18 @@ All figures are saved in `res/figures paper/`.
 
 ## Description of files and folders
 
+### 0 functions
+
+### 1 Markov chain business as usual
+
+### 2 initial belief benefits deployment
+
+### 3 degradation recovery profiles
+
+### 4 initial belief feasibility and costs
+
+### 5 Tmax vs Rdeploy
+
+### 6 insights analytical
+
+### res
