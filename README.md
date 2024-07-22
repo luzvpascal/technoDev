@@ -57,31 +57,39 @@ All figures are saved in `res/figures paper/`.
 
 ## Description of files and folders
 
-### file: variables of problem.R
+### variables of problem.R
 This file specifies all the global variables necessary to run experiments.
 
-### folder: 0 functions
+###  0 functions
 This folder contains all the functions neccessary to run experiments.
-#### folder: analytical solution
-#### folder: MCUAMS
-#### folder: MDP
-#### folder: POMDP
-#### folder: simulations
-#### file: files_names_functions.R
-#### file: load_functions.R
+* analytical solution
+* MCUAMS
+* MDP
+* POMDP
+* simulations
+* files_names_functions.R
+* load_functions.R
 
 ### 1 Markov chain business as usual
-#### folder: data AIMS
-#### file: Markov chain estimation
+* data AIMS
+* Markov chain estimation
 
-### folder: 2 initial belief benefits deployment
-#### file: GBR heatmap + expected AM + strategy + figures.R
-### folder: 3 degradation recovery profiles
+###  2 initial belief benefits deployment
+* GBR heatmap + expected AM + strategy + figures.R
+* GBR heatmap + expected AM + strategy + figures.R
 
-### folder: 4 initial belief feasibility and costs
+###  3 degradation recovery profiles
+* 4 profiles.R
+* general profiles.R
 
-### folder: 5 Tmax vs Rdeploy
+###  4 initial belief feasibility and costs
+* graph maxTime.R
+* graph maxTime analytical.R
+* graph maxTime figure paper.R
 
-### folder: 6 insights analytical
+###  5 Tmax vs Rdeploy
+* Tmax vs rdeploy.R
 
-### folder: res
+###  6 insights analytical
+
+###  res
