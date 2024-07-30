@@ -267,7 +267,7 @@ AM_strategy_plot <- result_policy %>%
   labs(x = TeX("Belief in restoration\ncapacity $\\beta^{r}_t$"),
        y = TeX("Belief in prevention\ncapacity $\\beta^{p}_t$"),
        fill = ""
-       , title = "A. Adaptive management\nstrategy for deployment"
+       , title = ""
   )
 
 ## random trajectories

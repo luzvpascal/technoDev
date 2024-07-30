@@ -27,13 +27,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="1.2713191"
-     inkscape:cx="230.46928"
-     inkscape:cy="0"
+     inkscape:zoom="1.7979167"
+     inkscape:cx="432.16685"
+     inkscape:cy="100.67207"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="3"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1093" />
   <defs
@@ -1140,18 +1140,6 @@
      image-rendering="pixelated"
      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAYAAAA8XJi6AAABwElEQVR4nO3VsQ3CQBAAwTc5/ZsWKM4NOHgqIHlYWYKZ/KQLVnfbHGOORY9zXx3lj9yuXoDfJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiI7eNMeby9HF8bxM+st+fV6/wlktGTmTkvEtyLhk5kZETGTmRkRMZOZGRExk5kZETGTmRkRMZuRfwHAxfCl/NkQAAAABJRU5ErkJggg=="
      id="image53" />
-  <polyline
-     points="546.49,42.24 568.97,42.30 569.00,19.85 569.02,15.09 569.04,14.25 569.06,14.10 569.07,14.08 569.09,14.07 569.11,14.07 569.13,14.07 569.15,14.07 "
-     style="stroke:#030303;stroke-width:1.07;stroke-linecap:butt;stroke-opacity:0.3"
-     id="polyline55"
-     transform="translate(-345.51959,15.049789)"
-     clip-path="url(#clipPath4638)" />
-  <polyline
-     points="546.42,64.94 546.49,42.24 568.93,93.28 568.95,65.07 573.65,118.97 573.66,93.37 574.49,136.44 574.49,119.03 574.63,146.13 574.63,136.48 574.65,146.15 "
-     style="stroke:#050505;stroke-width:1.07;stroke-linecap:butt;stroke-opacity:0.3"
-     id="polyline57"
-     transform="translate(-345.51959,15.049789)"
-     clip-path="url(#clipPath4634)" />
   <rect
      x="175.17043"
      y="54.069786"
@@ -1906,15 +1894,6 @@
      lengthAdjust="spacingAndGlyphs"
      id="text273"
      transform="translate(-345.51959,15.049789)">2</text>
-  <text
-     x="470.13"
-     y="61.27"
-     text-anchor="middle"
-     style="font-size:14.23px;font-family:Arial"
-     textLength="11.86"
-     lengthAdjust="spacingAndGlyphs"
-     id="text275"
-     transform="translate(-345.51959,15.049789)">...</text>
   <rect
      x="79.720406"
      y="20.529793"
@@ -2199,7 +2178,7 @@
      style="font-size:32px;line-height:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect6431);display:inline;fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333;paint-order:markers fill stroke;stop-color:#000000"><tspan
        x="123.37207"
        y="126.71477"
-       id="tspan6076">A</tspan></text>
+       id="tspan10664">A</tspan></text>
   <rect
      x="363.1846"
      y="22.236588"
@@ -2275,437 +2254,441 @@
      preserveAspectRatio="none"
      xlink:href="data:image/png;base64,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"
      id="image395" />
+  <polyline
+     points="421.80,205.57 421.80,201.80 421.80,198.02 421.81,194.25 421.77,190.48 420.17,187.17 419.94,186.71 417.39,182.94 416.40,181.51 412.62,181.50 408.85,181.50 405.08,181.49 401.31,181.49 "
+     style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     id="polyline1082"
+     transform="matrix(0.76071703,0,0,0.76071703,66.29704,16.684889)" />
   <g
-     id="g2475"
+     id="g1886"
      transform="matrix(0.76071703,0,0,0.76071703,66.29704,16.684889)">
     <polyline
-       points="421.80,205.57 421.80,201.80 421.80,198.02 421.81,194.25 421.77,190.48 420.17,187.17 419.94,186.71 417.39,182.94 416.40,181.51 412.62,181.50 408.85,181.50 405.08,181.49 401.31,181.49 "
+       points="507.47,205.57 507.48,201.80 507.49,198.02 507.49,194.25 507.16,190.48 506.92,189.83 505.78,186.71 504.30,182.94 503.14,180.00 502.82,179.17 501.16,175.39 499.37,171.67 499.35,171.62 497.43,167.85 495.60,164.25 495.51,164.08 493.54,160.31 491.83,156.99 491.59,156.54 489.61,152.76 488.06,149.90 487.57,148.99 485.54,145.22 484.29,142.92 483.48,141.45 481.44,137.68 480.51,135.96 479.41,133.91 477.40,130.13 476.74,128.90 475.40,126.36 473.41,122.59 472.97,121.75 471.44,118.82 469.46,115.05 469.20,114.55 467.49,111.28 465.52,107.50 465.43,107.32 463.41,103.73 461.66,100.61 461.29,99.96 459.17,96.19 457.88,93.89 457.02,92.42 454.84,88.65 454.11,87.42 452.61,84.87 450.49,81.10 450.34,80.83 448.52,77.33 446.57,73.57 446.56,73.56 444.05,69.79 442.80,67.23 442.17,66.02 439.85,62.24 439.03,60.71 437.55,58.47 435.25,55.13 434.92,54.70 432.00,50.93 431.48,50.25 429.07,47.16 427.71,45.41 426.14,43.39 423.94,40.53 423.23,39.61 420.34,35.84 420.17,35.61 416.40,34.98 412.62,34.99 408.85,35.00 405.08,35.01 401.31,35.01 "
        style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
-       id="polyline1082" />
+       id="polyline1084" />
+    <polyline
+       points="582.44,205.57 582.45,201.80 582.46,198.02 582.47,194.25 582.35,193.66 581.73,190.48 580.22,186.71 578.71,182.94 578.58,182.60 577.20,179.17 575.33,175.39 574.81,174.40 573.33,171.62 571.34,167.85 571.04,167.28 569.35,164.08 567.37,160.31 567.26,160.11 565.40,156.54 563.49,152.92 563.41,152.76 561.30,148.99 559.72,146.16 559.19,145.22 557.08,141.45 555.95,139.43 554.97,137.68 552.88,133.91 552.18,132.64 550.80,130.13 548.74,126.36 548.41,125.76 546.68,122.59 544.65,118.82 544.63,118.79 542.58,115.05 540.86,111.89 540.53,111.28 538.48,107.50 537.09,104.94 536.43,103.73 534.36,99.96 533.32,98.04 532.31,96.19 530.26,92.42 529.55,91.10 528.22,88.65 526.20,84.87 525.78,84.09 524.18,81.10 522.17,77.33 522.00,77.02 520.17,73.56 518.23,69.89 518.18,69.79 516.21,66.02 514.46,62.64 514.26,62.24 512.32,58.47 510.69,55.28 510.39,54.70 508.48,50.93 506.92,47.83 506.57,47.16 504.62,43.39 503.14,40.51 502.67,39.61 500.69,35.84 499.37,33.31 498.73,32.07 496.76,28.30 495.60,26.06 494.81,24.53 492.87,20.75 491.83,18.74 490.93,16.98 "
+       style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+       id="polyline1086" />
     <g
-       id="g1886">
-      <polyline
-         points="507.47,205.57 507.48,201.80 507.49,198.02 507.49,194.25 507.16,190.48 506.92,189.83 505.78,186.71 504.30,182.94 503.14,180.00 502.82,179.17 501.16,175.39 499.37,171.67 499.35,171.62 497.43,167.85 495.60,164.25 495.51,164.08 493.54,160.31 491.83,156.99 491.59,156.54 489.61,152.76 488.06,149.90 487.57,148.99 485.54,145.22 484.29,142.92 483.48,141.45 481.44,137.68 480.51,135.96 479.41,133.91 477.40,130.13 476.74,128.90 475.40,126.36 473.41,122.59 472.97,121.75 471.44,118.82 469.46,115.05 469.20,114.55 467.49,111.28 465.52,107.50 465.43,107.32 463.41,103.73 461.66,100.61 461.29,99.96 459.17,96.19 457.88,93.89 457.02,92.42 454.84,88.65 454.11,87.42 452.61,84.87 450.49,81.10 450.34,80.83 448.52,77.33 446.57,73.57 446.56,73.56 444.05,69.79 442.80,67.23 442.17,66.02 439.85,62.24 439.03,60.71 437.55,58.47 435.25,55.13 434.92,54.70 432.00,50.93 431.48,50.25 429.07,47.16 427.71,45.41 426.14,43.39 423.94,40.53 423.23,39.61 420.34,35.84 420.17,35.61 416.40,34.98 412.62,34.99 408.85,35.00 405.08,35.01 401.31,35.01 "
-         style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
-         id="polyline1084" />
-      <polyline
-         points="582.44,205.57 582.45,201.80 582.46,198.02 582.47,194.25 582.35,193.66 581.73,190.48 580.22,186.71 578.71,182.94 578.58,182.60 577.20,179.17 575.33,175.39 574.81,174.40 573.33,171.62 571.34,167.85 571.04,167.28 569.35,164.08 567.37,160.31 567.26,160.11 565.40,156.54 563.49,152.92 563.41,152.76 561.30,148.99 559.72,146.16 559.19,145.22 557.08,141.45 555.95,139.43 554.97,137.68 552.88,133.91 552.18,132.64 550.80,130.13 548.74,126.36 548.41,125.76 546.68,122.59 544.65,118.82 544.63,118.79 542.58,115.05 540.86,111.89 540.53,111.28 538.48,107.50 537.09,104.94 536.43,103.73 534.36,99.96 533.32,98.04 532.31,96.19 530.26,92.42 529.55,91.10 528.22,88.65 526.20,84.87 525.78,84.09 524.18,81.10 522.17,77.33 522.00,77.02 520.17,73.56 518.23,69.89 518.18,69.79 516.21,66.02 514.46,62.64 514.26,62.24 512.32,58.47 510.69,55.28 510.39,54.70 508.48,50.93 506.92,47.83 506.57,47.16 504.62,43.39 503.14,40.51 502.67,39.61 500.69,35.84 499.37,33.31 498.73,32.07 496.76,28.30 495.60,26.06 494.81,24.53 492.87,20.75 491.83,18.74 490.93,16.98 "
-         style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
-         id="polyline1086" />
-      <g
-         id="g1586">
-        <text
-           x="422.75"
-           y="198.95"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1088">0.602</text>
-        <text
-           x="422.53"
-           y="198.62"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1094">0.602</text>
-        <text
-           x="422.20001"
-           y="198.39999"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1100">0.602</text>
-        <text
-           x="421.81"
-           y="198.33"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1106">0.602</text>
-        <text
-           x="421.42001"
-           y="198.39999"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1112">0.602</text>
-        <text
-           x="421.09"
-           y="198.62"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1118">0.602</text>
-        <text
-           x="420.87"
-           y="198.95"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1124">0.602</text>
-        <text
-           x="420.79001"
-           y="199.34"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1130">0.602</text>
-        <text
-           x="420.87"
-           y="199.73"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1136">0.602</text>
-        <text
-           x="421.09"
-           y="200.06"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1142">0.602</text>
-        <text
-           x="421.42001"
-           y="200.28"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1148">0.602</text>
-        <text
-           x="421.81"
-           y="200.36"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1154">0.602</text>
-        <text
-           x="422.20001"
-           y="200.28"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1160">0.602</text>
-        <text
-           x="422.53"
-           y="200.06"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1166">0.602</text>
-        <text
-           x="422.75"
-           y="199.73"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1172">0.602</text>
-        <text
-           x="422.82999"
-           y="199.34"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1178">0.602</text>
-        <text
-           x="421.81"
-           y="199.34"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre"
-           textLength="35.580002"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1184">0.602</text>
-      </g>
-      <g
-         id="g1622">
-        <text
-           x="486.48001"
-           y="149.92"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1090">0.65</text>
-        <text
-           x="560.65997"
-           y="150.86"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1092">0.7</text>
-        <text
-           x="486.26001"
-           y="149.59"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1096">0.65</text>
-        <text
-           x="560.44"
-           y="150.53"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1098">0.7</text>
-        <text
-           x="485.92999"
-           y="149.37"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1102">0.65</text>
-        <text
-           x="560.10999"
-           y="150.31"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1104">0.7</text>
-        <text
-           x="485.54001"
-           y="149.28999"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1108">0.65</text>
-        <text
-           x="559.71997"
-           y="150.23"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1110">0.7</text>
-        <text
-           x="485.14999"
-           y="149.37"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1114">0.65</text>
-        <text
-           x="559.33002"
-           y="150.31"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1116">0.7</text>
-        <text
-           x="484.82001"
-           y="149.59"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1120">0.65</text>
-        <text
-           x="559"
-           y="150.53"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1122">0.7</text>
-        <text
-           x="484.60001"
-           y="149.92"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1126">0.65</text>
-        <text
-           x="558.78003"
-           y="150.86"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1128">0.7</text>
-        <text
-           x="484.51999"
-           y="150.31"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1132">0.65</text>
-        <text
-           x="558.70001"
-           y="151.25"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1134">0.7</text>
-        <text
-           x="484.60001"
-           y="150.7"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1138">0.65</text>
-        <text
-           x="558.78003"
-           y="151.64"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1140">0.7</text>
-        <text
-           x="484.82001"
-           y="151.03"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1144">0.65</text>
-        <text
-           x="559"
-           y="151.97"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1146">0.7</text>
-        <text
-           x="485.14999"
-           y="151.25"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1150">0.65</text>
-        <text
-           x="559.33002"
-           y="152.19"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1152">0.7</text>
-        <text
-           x="485.54001"
-           y="151.33"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1156">0.65</text>
-        <text
-           x="559.71997"
-           y="152.27"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1158">0.7</text>
-        <text
-           x="485.92999"
-           y="151.25"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1162">0.65</text>
-        <text
-           x="560.10999"
-           y="152.19"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1164">0.7</text>
-        <text
-           x="486.26001"
-           y="151.03"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1168">0.65</text>
-        <text
-           x="560.44"
-           y="151.97"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1170">0.7</text>
-        <text
-           x="486.48001"
-           y="150.7"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1174">0.65</text>
-        <text
-           x="560.65997"
-           y="151.64"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1176">0.7</text>
-        <text
-           x="486.56"
-           y="150.31"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1180">0.65</text>
-        <text
-           x="560.73999"
-           y="151.25"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1182">0.7</text>
-        <text
-           x="485.54001"
-           y="150.31"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre"
-           textLength="27.67"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1186">0.65</text>
-        <text
-           x="559.71997"
-           y="151.25"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre"
-           textLength="19.76"
-           lengthAdjust="spacingAndGlyphs"
-           id="text1188">0.7</text>
-      </g>
+       id="g1586"
+       transform="matrix(1.2366675,0,0,1.2366675,-95.518287,-44.517666)">
+      <text
+         x="422.75"
+         y="198.95"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1088">0.602</text>
+      <text
+         x="422.53"
+         y="198.62"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1094">0.602</text>
+      <text
+         x="422.20001"
+         y="198.39999"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1100">0.602</text>
+      <text
+         x="421.81"
+         y="198.33"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1106">0.602</text>
+      <text
+         x="421.42001"
+         y="198.39999"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1112">0.602</text>
+      <text
+         x="421.09"
+         y="198.62"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1118">0.602</text>
+      <text
+         x="420.87"
+         y="198.95"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1124">0.602</text>
+      <text
+         x="420.79001"
+         y="199.34"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1130">0.602</text>
+      <text
+         x="420.87"
+         y="199.73"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1136">0.602</text>
+      <text
+         x="421.09"
+         y="200.06"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1142">0.602</text>
+      <text
+         x="421.42001"
+         y="200.28"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1148">0.602</text>
+      <text
+         x="421.81"
+         y="200.36"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1154">0.602</text>
+      <text
+         x="422.20001"
+         y="200.28"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1160">0.602</text>
+      <text
+         x="422.53"
+         y="200.06"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1166">0.602</text>
+      <text
+         x="422.75"
+         y="199.73"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1172">0.602</text>
+      <text
+         x="422.82999"
+         y="199.34"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1178">0.602</text>
+      <text
+         x="421.81"
+         y="199.34"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre"
+         textLength="35.580002"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1184">0.602</text>
+    </g>
+    <g
+       id="g2544"
+       transform="matrix(1.2356726,0,0,1.2356726,-111.06825,-32.773144)">
+      <text
+         x="486.48001"
+         y="149.92"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1090">0.65</text>
+      <text
+         x="486.26001"
+         y="149.59"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1096">0.65</text>
+      <text
+         x="485.92999"
+         y="149.37"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1102">0.65</text>
+      <text
+         x="485.54001"
+         y="149.28999"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1108">0.65</text>
+      <text
+         x="485.14999"
+         y="149.37"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1114">0.65</text>
+      <text
+         x="484.82001"
+         y="149.59"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1120">0.65</text>
+      <text
+         x="484.60001"
+         y="149.92"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1126">0.65</text>
+      <text
+         x="484.51999"
+         y="150.31"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1132">0.65</text>
+      <text
+         x="484.60001"
+         y="150.7"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1138">0.65</text>
+      <text
+         x="484.82001"
+         y="151.03"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1144">0.65</text>
+      <text
+         x="485.14999"
+         y="151.25"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1150">0.65</text>
+      <text
+         x="485.54001"
+         y="151.33"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1156">0.65</text>
+      <text
+         x="485.92999"
+         y="151.25"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1162">0.65</text>
+      <text
+         x="486.26001"
+         y="151.03"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1168">0.65</text>
+      <text
+         x="486.48001"
+         y="150.7"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1174">0.65</text>
+      <text
+         x="486.56"
+         y="150.31"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1180">0.65</text>
+      <text
+         x="485.54001"
+         y="150.31"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre"
+         textLength="27.67"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1186">0.65</text>
+    </g>
+    <g
+       id="g2563"
+       transform="matrix(1.2356725,0,0,1.2356725,-129.48246,-32.994665)">
+      <text
+         x="560.65997"
+         y="150.86"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1092">0.7</text>
+      <text
+         x="560.44"
+         y="150.53"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1098">0.7</text>
+      <text
+         x="560.10999"
+         y="150.31"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1104">0.7</text>
+      <text
+         x="559.71997"
+         y="150.23"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1110">0.7</text>
+      <text
+         x="559.33002"
+         y="150.31"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1116">0.7</text>
+      <text
+         x="559"
+         y="150.53"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1122">0.7</text>
+      <text
+         x="558.78003"
+         y="150.86"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1128">0.7</text>
+      <text
+         x="558.70001"
+         y="151.25"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1134">0.7</text>
+      <text
+         x="558.78003"
+         y="151.64"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1140">0.7</text>
+      <text
+         x="559"
+         y="151.97"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1146">0.7</text>
+      <text
+         x="559.33002"
+         y="152.19"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1152">0.7</text>
+      <text
+         x="559.71997"
+         y="152.27"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1158">0.7</text>
+      <text
+         x="560.10999"
+         y="152.19"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1164">0.7</text>
+      <text
+         x="560.44"
+         y="151.97"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1170">0.7</text>
+      <text
+         x="560.65997"
+         y="151.64"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1176">0.7</text>
+      <text
+         x="560.73999"
+         y="151.25"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1182">0.7</text>
+      <text
+         x="559.71997"
+         y="151.25"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre"
+         textLength="19.76"
+         lengthAdjust="spacingAndGlyphs"
+         id="text1188">0.7</text>
     </g>
   </g>
   <polygon
@@ -3052,7 +3035,7 @@
      style="font-size:32px;line-height:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect6431-8);display:inline;fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333;paint-order:markers fill stroke;stop-color:#000000"><tspan
        x="123.37207"
        y="126.71477"
-       id="tspan6078">B</tspan></text>
+       id="tspan10666">B</tspan></text>
   <rect
      x="643.84485"
      y="22.52953"
@@ -3144,7 +3127,8 @@
        style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        id="polyline3816" />
     <g
-       id="g4306">
+       id="g4306"
+       transform="matrix(1.1460348,0,0,1.1460348,-60.982226,-25.446876)">
       <text
          x="436.73999"
          y="185.11"
@@ -3283,7 +3267,8 @@
          id="text3914">0.003</text>
     </g>
     <g
-       id="g4287">
+       id="g4287"
+       transform="matrix(1.1460334,0,0,1.1460334,-70.245299,-19.322003)">
       <text
          x="496.22"
          y="143.17"
@@ -3422,7 +3407,8 @@
          id="text3916">0.05</text>
     </g>
     <g
-       id="g4268">
+       id="g4268"
+       transform="matrix(1.1460348,0,0,1.1460348,-80.800588,-19.27983)">
       <text
          x="564.53998"
          y="142.87"
@@ -3981,7 +3967,7 @@
        transform="translate(659.22181,81.065026)" />
     <g
        id="g5257"
-       transform="translate(659.22181,81.065026)">
+       transform="matrix(1.1801625,0,0,1.1801625,581.69968,49.208298)">
       <text
          x="435.07999"
          y="187.67999"
@@ -4120,8 +4106,8 @@
          id="text4829">1</text>
     </g>
     <g
-       id="g5238"
-       transform="translate(659.22181,81.065026)">
+       id="g2617"
+       transform="matrix(1.1627372,0,0,1.1627372,-186.80954,-34.464042)">
       <text
          x="498.03"
          y="141.57001"
@@ -4129,7 +4115,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4735">37</text>
+         id="text4735"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="497.81"
          y="141.24001"
@@ -4137,7 +4124,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4741">37</text>
+         id="text4741"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="497.48001"
          y="141.02"
@@ -4145,7 +4133,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4747">37</text>
+         id="text4747"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="497.09"
          y="140.94"
@@ -4153,7 +4142,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4753">37</text>
+         id="text4753"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="496.70001"
          y="141.02"
@@ -4161,7 +4151,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4759">37</text>
+         id="text4759"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="496.37"
          y="141.24001"
@@ -4169,7 +4160,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4765">37</text>
+         id="text4765"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="496.14999"
          y="141.57001"
@@ -4177,7 +4169,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4771">37</text>
+         id="text4771"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="496.07001"
          y="141.96001"
@@ -4185,7 +4178,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4777">37</text>
+         id="text4777"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="496.14999"
          y="142.35001"
@@ -4193,7 +4187,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4783">37</text>
+         id="text4783"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="496.37"
          y="142.67999"
@@ -4201,7 +4196,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4789">37</text>
+         id="text4789"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="496.70001"
          y="142.89999"
@@ -4209,7 +4205,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4795">37</text>
+         id="text4795"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="497.09"
          y="142.98"
@@ -4217,7 +4214,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4801">37</text>
+         id="text4801"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="497.48001"
          y="142.89999"
@@ -4225,7 +4223,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4807">37</text>
+         id="text4807"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="497.81"
          y="142.67999"
@@ -4233,7 +4232,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4813">37</text>
+         id="text4813"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="498.03"
          y="142.35001"
@@ -4241,7 +4241,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4819">37</text>
+         id="text4819"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="498.10001"
          y="141.96001"
@@ -4249,7 +4250,8 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4825">37</text>
+         id="text4825"
+         transform="translate(659.22181,81.065026)">37</text>
       <text
          x="497.09"
          y="141.96001"
@@ -4257,146 +4259,148 @@
          style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre"
          textLength="15.81"
          lengthAdjust="spacingAndGlyphs"
-         id="text4831">37</text>
-      <g
-         id="g5201">
-        <text
-           x="558.32001"
-           y="141.57001"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4737">43</text>
-        <text
-           x="558.09003"
-           y="141.24001"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4743">43</text>
-        <text
-           x="557.76001"
-           y="141.02"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4749">43</text>
-        <text
-           x="557.37"
-           y="140.94"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4755">43</text>
-        <text
-           x="556.98999"
-           y="141.02"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4761">43</text>
-        <text
-           x="556.65002"
-           y="141.24001"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4767">43</text>
-        <text
-           x="556.42999"
-           y="141.57001"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4773">43</text>
-        <text
-           x="556.35999"
-           y="141.96001"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4779">43</text>
-        <text
-           x="556.42999"
-           y="142.35001"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4785">43</text>
-        <text
-           x="556.65002"
-           y="142.67999"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4791">43</text>
-        <text
-           x="556.98999"
-           y="142.89999"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4797">43</text>
-        <text
-           x="557.37"
-           y="142.98"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4803">43</text>
-        <text
-           x="557.76001"
-           y="142.89999"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4809">43</text>
-        <text
-           x="558.09003"
-           y="142.67999"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4815">43</text>
-        <text
-           x="558.32001"
-           y="142.35001"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4821">43</text>
-        <text
-           x="558.39001"
-           y="141.96001"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4827">43</text>
-        <text
-           x="557.37"
-           y="141.96001"
-           text-anchor="middle"
-           style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre"
-           textLength="15.81"
-           lengthAdjust="spacingAndGlyphs"
-           id="text4833">43</text>
-      </g>
+         id="text4831"
+         transform="translate(659.22181,81.065026)">37</text>
+    </g>
+    <g
+       id="g5201"
+       transform="matrix(1.1627372,0,0,1.1627372,569.92484,59.793284)">
+      <text
+         x="558.32001"
+         y="141.57001"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4737">43</text>
+      <text
+         x="558.09003"
+         y="141.24001"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4743">43</text>
+      <text
+         x="557.76001"
+         y="141.02"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4749">43</text>
+      <text
+         x="557.37"
+         y="140.94"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4755">43</text>
+      <text
+         x="556.98999"
+         y="141.02"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4761">43</text>
+      <text
+         x="556.65002"
+         y="141.24001"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4767">43</text>
+      <text
+         x="556.42999"
+         y="141.57001"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4773">43</text>
+      <text
+         x="556.35999"
+         y="141.96001"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4779">43</text>
+      <text
+         x="556.42999"
+         y="142.35001"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4785">43</text>
+      <text
+         x="556.65002"
+         y="142.67999"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4791">43</text>
+      <text
+         x="556.98999"
+         y="142.89999"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4797">43</text>
+      <text
+         x="557.37"
+         y="142.98"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4803">43</text>
+      <text
+         x="557.76001"
+         y="142.89999"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4809">43</text>
+      <text
+         x="558.09003"
+         y="142.67999"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4815">43</text>
+      <text
+         x="558.32001"
+         y="142.35001"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4821">43</text>
+      <text
+         x="558.39001"
+         y="141.96001"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre;fill:#ffffff"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4827">43</text>
+      <text
+         x="557.37"
+         y="141.96001"
+         text-anchor="middle"
+         style="font-weight:bold;font-size:14.23px;font-family:Arial;white-space:pre"
+         textLength="15.81"
+         lengthAdjust="spacingAndGlyphs"
+         id="text4833">43</text>
     </g>
   </g>
   <polygon
@@ -4904,4 +4908,52 @@
      height="6.3000002"
      style="fill:#000000;stroke:#ffffff;stroke-width:0.71"
      id="rect2326" />
+  <text
+     x="496.10999"
+     y="59.860001"
+     style="font-size:14.23px;font-family:Arial;white-space:pre"
+     textLength="7.79"
+     lengthAdjust="spacingAndGlyphs"
+     id="text271-0"
+     transform="translate(-372.59885,14.403589)">β</text>
+  <text
+     x="503.89999"
+     y="62.439999"
+     style="font-size:9.96px;font-family:Arial;white-space:pre"
+     textLength="5.54"
+     lengthAdjust="spacingAndGlyphs"
+     id="text273-9"
+     transform="translate(-372.59885,14.403589)">3</text>
+  <text
+     x="496.10999"
+     y="59.860001"
+     style="font-size:14.23px;font-family:Arial;white-space:pre"
+     textLength="7.79"
+     lengthAdjust="spacingAndGlyphs"
+     id="text271-2"
+     transform="translate(-390.297,-10.078856)">β</text>
+  <text
+     x="503.89999"
+     y="62.439999"
+     style="font-size:9.96px;font-family:Arial;white-space:pre"
+     textLength="5.54"
+     lengthAdjust="spacingAndGlyphs"
+     id="text273-4"
+     transform="translate(-390.297,-10.078856)">4</text>
+  <text
+     x="496.10999"
+     y="59.860001"
+     style="font-size:14.23px;font-family:Arial;white-space:pre"
+     textLength="7.79"
+     lengthAdjust="spacingAndGlyphs"
+     id="text271-7"
+     transform="translate(-409.3008,14.10862)">β</text>
+  <text
+     x="503.89999"
+     y="62.439999"
+     style="font-size:9.96px;font-family:Arial;white-space:pre"
+     textLength="5.54"
+     lengthAdjust="spacingAndGlyphs"
+     id="text273-41"
+     transform="translate(-409.3008,14.10862)">5</text>
 </svg>

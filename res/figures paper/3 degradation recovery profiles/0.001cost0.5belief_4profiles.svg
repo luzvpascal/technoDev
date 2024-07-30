@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.64555061"
-     inkscape:cx="653.70552"
-     inkscape:cy="244.7523"
+     inkscape:zoom="0.91294643"
+     inkscape:cx="664.33252"
+     inkscape:cy="212.49878"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
@@ -110,24 +110,24 @@
      id="defs1133" />
   <line
      x1="249.67102"
-     y1="488.29575"
+     y1="498.97546"
      x2="249.67102"
-     y2="8.9412241"
-     style="stroke:#bebebe;stroke-width:1.04351;stroke-linecap:butt;stroke-dasharray:1.38485, 4.16429"
+     y2="-0.095450729"
+     style="stroke:#bebebe;stroke-width:1.06475;stroke-linecap:butt;stroke-dasharray:1.41304, 4.24906"
      id="line1217" />
   <line
      x1="451.27103"
-     y1="488.29575"
+     y1="498.97546"
      x2="451.27103"
-     y2="8.9412241"
-     style="stroke:#bebebe;stroke-width:1.04351;stroke-linecap:butt;stroke-dasharray:1.38485, 4.16429"
+     y2="-0.095450729"
+     style="stroke:#bebebe;stroke-width:1.06475;stroke-linecap:butt;stroke-dasharray:1.41304, 4.24906"
      id="line1219" />
   <line
      x1="652.87097"
-     y1="488.29575"
+     y1="498.97546"
      x2="652.87097"
-     y2="8.9412241"
-     style="stroke:#bebebe;stroke-width:1.04351;stroke-linecap:butt;stroke-dasharray:1.38485, 4.16429"
+     y2="-0.095450729"
+     style="stroke:#bebebe;stroke-width:1.06475;stroke-linecap:butt;stroke-dasharray:1.41304, 4.24906"
      id="line1221" />
   <text
      x="60.849998"
@@ -136,7 +136,7 @@
      textLength="116.04"
      lengthAdjust="spacingAndGlyphs"
      id="text225"
-     transform="matrix(0.93926609,0,0,1,21.519238,-16.136012)">fast degradation</text>
+     transform="matrix(0.96229899,0,0,1,20.089515,-16.136012)">Fast degradation,</text>
   <text
      x="60.849998"
      y="27.389999"
@@ -144,7 +144,7 @@
      textLength="116.04"
      lengthAdjust="spacingAndGlyphs"
      id="text225-5"
-     transform="matrix(0.93926609,0,0,1,223.4286,-16.136012)">fast degradation</text>
+     transform="matrix(0.96229764,0,0,1,221.99896,-16.036012)">Fast degradation,</text>
   <text
      x="60.849998"
      y="42.939999"
@@ -168,7 +168,7 @@
      textLength="123.23"
      lengthAdjust="spacingAndGlyphs"
      id="text597"
-     transform="matrix(0.89191154,0,0,1,68.043662,-16.136012)">slow degradation</text>
+     transform="matrix(0.90131652,0,0,1,63.672779,-16.136012)">Slow degradation,</text>
   <text
      x="464.04999"
      y="42.939999"
@@ -184,7 +184,7 @@
      textLength="123.23"
      lengthAdjust="spacingAndGlyphs"
      id="text819"
-     transform="matrix(0.90204483,0,0,1,83.083992,-16.136012)">slow degradation</text>
+     transform="matrix(0.90131652,0,0,1,83.569297,-16.136012)">Slow degradation,</text>
   <text
      x="665.65002"
      y="42.939999"
@@ -4269,7 +4269,7 @@
      style="font-size:32px;line-height:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect6431);display:inline;fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333;paint-order:markers fill stroke;stop-color:#000000"><tspan
        x="123.37207"
        y="126.71477"
-       id="tspan7978">A</tspan></text>
+       id="tspan7108">A</tspan></text>
   <text
      xml:space="preserve"
      transform="matrix(0.75,0,0,0.75,162.90424,-77.356389)"
@@ -4277,7 +4277,7 @@
      style="font-size:32px;line-height:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect6431-8);display:inline;fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333;paint-order:markers fill stroke;stop-color:#000000"><tspan
        x="123.37207"
        y="126.71477"
-       id="tspan7980">B</tspan></text>
+       id="tspan7110">B</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:24px;line-height:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration-color:#000000;text-anchor:middle;white-space:pre;fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.999997;paint-order:markers fill stroke;stop-color:#000000"
