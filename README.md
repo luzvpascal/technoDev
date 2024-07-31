@@ -73,9 +73,3 @@ source("4 initial belief feasibility and costs/graph maxTime figure paper.R")
 source("5 Tmax vs Rdeploy/Tmax vs rdeploy.R")
 ```
 All figures are saved in `res/figures paper/`.
-###  5 Tmax vs Rdeploy
-* Tmax vs rdeploy.R
-
-###  6 insights analytical
-
-###  res
