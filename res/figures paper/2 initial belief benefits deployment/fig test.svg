@@ -28,8 +28,8 @@
      inkscape:document-units="pt"
      showgrid="false"
      inkscape:zoom="1.7979167"
-     inkscape:cx="432.16685"
-     inkscape:cy="100.67207"
+     inkscape:cx="134.87833"
+     inkscape:cy="101.22827"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
@@ -2178,7 +2178,7 @@
      style="font-size:32px;line-height:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect6431);display:inline;fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333;paint-order:markers fill stroke;stop-color:#000000"><tspan
        x="123.37207"
        y="126.71477"
-       id="tspan10664">A</tspan></text>
+       id="tspan5528">A</tspan></text>
   <rect
      x="363.1846"
      y="22.236588"
@@ -3035,7 +3035,7 @@
      style="font-size:32px;line-height:normal;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect6431-8);display:inline;fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333;paint-order:markers fill stroke;stop-color:#000000"><tspan
        x="123.37207"
        y="126.71477"
-       id="tspan10666">B</tspan></text>
+       id="tspan5530">B</tspan></text>
   <rect
      x="643.84485"
      y="22.52953"
@@ -4947,7 +4947,9 @@
      textLength="7.79"
      lengthAdjust="spacingAndGlyphs"
      id="text271-7"
-     transform="translate(-409.3008,14.10862)">β</text>
+     transform="translate(-409.3008,14.10862)"><tspan
+       style="fill:#ffffff"
+       id="tspan1733">β</tspan></text>
   <text
      x="503.89999"
      y="62.439999"
@@ -4955,5 +4957,7 @@
      textLength="5.54"
      lengthAdjust="spacingAndGlyphs"
      id="text273-41"
-     transform="translate(-409.3008,14.10862)">5</text>
+     transform="translate(-409.3008,14.10862)"><tspan
+       style="fill:#ffffff"
+       id="tspan1837">5</tspan></text>
 </svg>

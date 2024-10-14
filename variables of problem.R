@@ -123,7 +123,7 @@ results_tmax_vs_rdeploy_file <- paste("res/5 Tmax vs Rdeploy/",
                                       coeffDev,"cost", 0.5,"belief","_tmax_vs_rdeploy.csv", sep="")
 
 results_tmax_vs_rdeploy_figure <- paste("res/figures paper/5 Tmax vs Rdeploy/",
-                                        coeffDev,"cost", 0.5,"belief","_tmax_vs_rdeploy.pdf", sep="")
+                                        coeffDev,"cost", 0.5,"belief","_tmax_vs_rdeploy.svg", sep="")
 
 results_tmax_vs_rdeploy_supps_figure <- paste("res/figures paper/5 Tmax vs Rdeploy/",
                                               coeffDev,"cost", 0.5,"belief","_tmax_vs_rdeploy_supps.pdf", sep="")

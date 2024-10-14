@@ -106,12 +106,14 @@ tmax_vs_rdeploy <- ggplot(res,
      aes(x = (r_deploy-value_noRD+costDev_P1_index)
          ,color=cost_fact
          )) +
-  geom_line(aes(y=max_invest_analytical,  linetype="Analytical approx."))+
-  geom_line(aes(y=max_invest, linetype="Numerical"))+
+  geom_line(aes(y=max_invest_analytical,
+                linetype="Analytical approx."))+
+  geom_line(aes(y=max_invest,
+                linetype="Exact"))+
   scale_linetype_manual(values = c("dashed", "solid"))+
-  labs(x = TeX("$\\Delta_R =R_{dep} - (R_{BAU} - C_{dev})$"),
-       y = TeX("$T_{max}$"),
-       color=TeX("$C_{dev}$"),
+  labs(x = TeX("Net benefits $(\\Delta_R)$"),
+       y = TeX("Development time limit ($T_{max}$)"),
+       color=TeX("$C_{dev}/B_{h}$"),
        linetype="")+
   theme_bw()+
   theme(
@@ -130,7 +132,7 @@ tmax_vs_rdeploy <- ggplot(res,
 tmax_vs_rdeploy
 
 ggsave(results_tmax_vs_rdeploy_figure,
-       plot = tmax_vs_rdeploy, width = 10, height = 4, units = "in")
+       plot = tmax_vs_rdeploy, width = 10, height = 4.5, units = "in")
 
 ## SUPP INFO FIGURE ####
 min_vals <- res %>%
@@ -147,8 +149,8 @@ tmax_vs_rdeploy_supp <- res %>%
   geom_line(aes(y=max_invest_analytical,  linetype="Analytical approx."))+
   geom_line(aes(y=max_invest, linetype="Numerical"))+
   scale_linetype_manual(values = c("dashed", "solid"))+
-  labs(x = TeX("$\\Delta_R = R_{dep} - R_{BAU} + C_{dev}$"),
-       y = TeX("$T_{max}$"),
+  labs(x = TeX("Net benefits $(\\Delta_R)$"),
+       y = TeX("Development time limit ($T_{max}$)"),
        color=TeX("$C_{dev}/B_{h}$"),
        linetype="")+
   theme_bw()+
