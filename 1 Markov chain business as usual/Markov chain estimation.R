@@ -66,3 +66,6 @@ results %>%
   ggplot(aes(y=value))+
   geom_boxplot()+
   facet_wrap(~trans)
+
+
+data%>%group_by(state)%>%summarise(mean_cover=mean(cover))

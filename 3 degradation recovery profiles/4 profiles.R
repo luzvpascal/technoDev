@@ -43,12 +43,12 @@ for (profile in profile_possibilities){
     value_noRD_infty <- value_noRD/(1-gamma)
 
     ## solve adaptive management deployment####
-    solving_AM(compute_mean_params=FALSE,
+    solving_AM(compute_mean_params=runMCUAMS,
                tr_nothing_index,
                reward_ready_file,
                output_meanPars_file = output_meanPars_file(costDev_P1, tr_low_low,tr_high_low),
                output_priors_file=output_priors_file(costDev_P1, tr_low_low,tr_high_low),
-               solve_hmMDP = FALSE,
+               solve_hmMDP = solve_hmMDP,
                file_pomdpx_index=file_pomdpx_AM(costDev_P1, tr_low_low,tr_high_low,
                                                 initial_belief_benef_low,
                                                 initial_belief_benef_high),
@@ -75,8 +75,7 @@ for (profile in profile_possibilities){
     combination_beliefs_index$profile <- profile
     combination_beliefs_index$max_invest <- 0
     ## Tmax calculation ####
-    for (belief_benef_low in coeffs_initial_belief_benefits_low[seq(37,51)]){
-      print(belief_benef_low)
+    for (belief_benef_low in coeffs_initial_belief_benefits_low){
       for (belief_benef_high in coeffs_initial_belief_benefits_high){
         ## solving AM ####
         initial_belief_benef_index <- c( #initial belief tech beneficial
@@ -311,7 +310,7 @@ a <- plot_grid(plotlist = plots_Tmax, ncol = 4, align = "hv")
 a <- plot_grid(a,legend_plot_Tmax, rel_widths = c(4,1))
 b <- plot_grid(plotlist = plots_AM, ncol = 4, align = "hv")
 b <- plot_grid(b,legend_plot_AM, rel_widths = c(4,1))
-FIG <- ggarrange(a,b,nrow=2)
+FIG <- ggarrange(b,a,nrow=2)
 
 # Calculate x-coordinates for the dotted line
 n_plots <- 4  # Number of plots

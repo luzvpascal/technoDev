@@ -29,14 +29,14 @@ for (coeffDev_index in c(0.01, 0.001, 0.0001)){
     ##belief switch ####
     ####################
     belief_IS <- belief_invest_to_surrender(cost_dev =costDev_P1_index,
-                                     p_idle = prob_ready,
+                                     p_idle = prob_idle_idle,
                                      Rnord = value_noRD,
                                      Wready = value_AM_infty,
                                      disc = gamma)
 
     for (belief_i in belief_tests){
       Tmax_years <- max_years(belief_i,
-                              prob_ready,
+                              prob_idle_idle,
                             belief_IS)
 
       results <- rbind(results,

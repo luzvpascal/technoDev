@@ -64,11 +64,11 @@
   
   <Entry>
  <Instance> action1 model1 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.8999 </ProbTable>
+ <ProbTable> 0.9 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action1 model1 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.1001 </ProbTable>
+ <ProbTable> 0.1 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action1 model1 obs_state2 obs_state1  </Instance>
@@ -80,19 +80,19 @@
  </Entry>
  <Entry>
  <Instance> action2 model1 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.9469 </ProbTable>
+ <ProbTable> 0.9476 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model1 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.0531 </ProbTable>
+ <ProbTable> 0.0524 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model1 obs_state2 obs_state1  </Instance>
- <ProbTable> 0.7467 </ProbTable>
+ <ProbTable> 0.7478 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model1 obs_state2 obs_state2  </Instance>
- <ProbTable> 0.2533 </ProbTable>
+ <ProbTable> 0.2522 </ProbTable>
  </Entry>
  
   <Entry>
@@ -113,19 +113,19 @@
  </Entry>
  <Entry>
  <Instance> action2 model2 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.9479 </ProbTable>
+ <ProbTable> 0.9489 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model2 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.0521 </ProbTable>
+ <ProbTable> 0.0511 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model2 obs_state2 obs_state1  </Instance>
- <ProbTable> 0.2515 </ProbTable>
+ <ProbTable> 0.2499 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model2 obs_state2 obs_state2  </Instance>
- <ProbTable> 0.7485 </ProbTable>
+ <ProbTable> 0.7501 </ProbTable>
  </Entry>
  
   <Entry>
@@ -146,28 +146,28 @@
  </Entry>
  <Entry>
  <Instance> action2 model3 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.4469 </ProbTable>
+ <ProbTable> 0.4473 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model3 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.5531 </ProbTable>
+ <ProbTable> 0.5527 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model3 obs_state2 obs_state1  </Instance>
- <ProbTable> 0.7443 </ProbTable>
+ <ProbTable> 0.7468 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model3 obs_state2 obs_state2  </Instance>
- <ProbTable> 0.2557 </ProbTable>
+ <ProbTable> 0.2532 </ProbTable>
  </Entry>
  
   <Entry>
  <Instance> action1 model4 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.9 </ProbTable>
+ <ProbTable> 0.8999 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action1 model4 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.1 </ProbTable>
+ <ProbTable> 0.1001 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action1 model4 obs_state2 obs_state1  </Instance>
@@ -179,19 +179,19 @@
  </Entry>
  <Entry>
  <Instance> action2 model4 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.4478 </ProbTable>
+ <ProbTable> 0.4503 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model4 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.5522 </ProbTable>
+ <ProbTable> 0.5497 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model4 obs_state2 obs_state1  </Instance>
- <ProbTable> 0.2447 </ProbTable>
+ <ProbTable> 0.2471 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model4 obs_state2 obs_state2  </Instance>
- <ProbTable> 0.7553 </ProbTable>
+ <ProbTable> 0.7529 </ProbTable>
  </Entry>
  </Parameter>
  </CondProb>
@@ -244,7 +244,7 @@
 <Parameter type="TBL">
  <Entry>
 <Instance> - - </Instance>
-<ValueTable>0.5 1 0.495 0.995</ValueTable>
+<ValueTable>0.67 1 0.668 0.998</ValueTable>
 </Entry>
  </Parameter>
 

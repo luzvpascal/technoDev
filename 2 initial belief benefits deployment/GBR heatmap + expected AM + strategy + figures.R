@@ -260,52 +260,17 @@ AM_strategy_plot <- result_policy %>%
     text=element_text(size=20),
     title=element_text(size=12),
     legend.title=element_text(size=18),
-    axis.title=element_text(size=15, vjust=0.5)
+    axis.title=element_text(size=15)
   ) +
   scale_x_continuous(breaks = c(0,0.5,1), labels = c("0\nlow", 0.5, "1\nhigh")) +
   scale_y_continuous(breaks = c(0,0.5,1))+
   labs(x = TeX("Belief in restoration\ncapacity $\\beta^{r}_t$"),
        y = TeX("Belief in prevention\ncapacity $\\beta^{p}_t$"),
        fill = ""
-       , title = ""
+       , title = "A."
   )
 
 ## random trajectories
-for (it in seq(2)){
-  if (it==1){
-    tr_mdp_real <- transition_from_parameters(c(0.8,0.8,0,0), N_actions = 2)
-    state_prior <- 1
-  } else if (it == 2){
-    tr_mdp_real <- transition_from_parameters(c(0.8,0.8,0,1), N_actions = 2)
-    state_prior <- 2
-  } else if (it == 3){
-    tr_mdp_real <- transition_from_parameters(c(0,0.8,1,0.1), N_actions = 2)
-    state_prior <- 2
-  }
-  tab_rand <- trajectory(state_prior= state_prior,
-                         Tmax = 10,
-                         initial_belief_state = initial_belief_benef,
-                         tr_mdp = tr_mdp_real,
-                         rew_mdp= reward_reef,#dont care
-                         tr_momdp = transition_momdp,
-                         obs_momdp = observation_momdp,
-                         alpha_momdp = alphas_AM,
-                         disc = gamma,
-                         optimal_policy = TRUE,
-                         naive_policy = NA)
-
-  mod_probs2 <-as.data.frame(tab_rand$mod_probs)
-  names(mod_probs2) <- c("A1A1","A1A2","A2A1","A2A2")
-
-  mod_probs2 <- mod_probs2%>%
-    mutate(belief_benef_low=1-A1A1-A1A2,
-           belief_benef_high=1-A1A1-A2A1)
-
-  AM_strategy_plot <- AM_strategy_plot+
-    geom_line(data=mod_probs2, aes(x=belief_benef_low, y=belief_benef_high),
-              color=paste0("grey",it), alpha=0.3)
-}
-
 AM_strategy_plot <- AM_strategy_plot+
   geom_line(data=mod_probs, aes(x=belief_benef_low, y=belief_benef_high))+
   geom_point(data=mod_probs[-1,], aes(x=belief_benef_low, y=belief_benef_high),
@@ -313,36 +278,30 @@ AM_strategy_plot <- AM_strategy_plot+
   geom_point(data=mod_probs[1,],
              aes(x=belief_benef_low, y=belief_benef_high),
              shape = 23, size = 3, col="black", fill="red")+
-  annotate("text", x= mod_probs$belief_benef_low[seq(3)]+0.05,
-           y=mod_probs$belief_benef_high[seq(3)]-0.1,
-           label= TeX(paste("$\\beta_",seq(0,2),"$")),
-           size = 5)+
-  annotate("text", x= mod_probs$belief_benef_low[4],
-           y=mod_probs$belief_benef_high[4]-0.1,
-           label= "...",
+  annotate("text", x= mod_probs$belief_benef_low[seq(6)]+0.05,
+           y=mod_probs$belief_benef_high[seq(6)]-0.1,
+           label= TeX(paste("$\\beta_",seq(0,5),"$")),
            size = 5)
 
 ## map EXPECTED VALUE #####
 res <- res %>%
   mutate(valueAMinst=value_AM_infty*(1-gamma))
-break_point_up <- round(max(res$valueAMinst),digits=1)
-break_point_low <-0.003 + value_noRD-costDev_P1
 
-breaks_countour_AM <- c(break_point_low,0.65,0.7)
+breaks_countour_AM <- c(0.738,0.76,0.8)
 
 value_AM_heatMap <-  res %>%
   ggplot(aes(x = belief_benef_low, y = belief_benef_high)) +
   geom_raster(aes(fill=valueAMinst),interpolate = TRUE) +
   scale_fill_gradient(low = "white", high = "darkred"
-                      # ,
-                      # breaks = c(0.6,0.75),
-                      # labels = c(0.6,0.75)
+                      ,
+                      breaks = c(0.70,0.75,0.80,0.85),
+                      labels = c(0.70,0.75,0.80,0.85)
   )+
-  labs(x = TeX("$\\beta^{r}_0$ (restoration)"),
-       y = TeX("$\\beta^{p}_0$ (prevention)"),
-       fill = TeX("Deployment benefits $R_{AM}$")
-       # ,
-       # title="B. Yearly deployment\nbenefits"
+  labs(x = TeX("Initial belief in restoration\ncapacity $\\beta^{r}_0$"),
+       y = TeX("Initial belief in prevention\ncapacity $\\beta^{p}_0$"),
+       fill = TeX("Deployment benefits\n$R_{AM}$")
+       ,
+       title="B."
   ) +
   geom_contour(aes(z = valueAMinst),
                binwidth = 0.1,
@@ -367,7 +326,7 @@ value_AM_heatMap <-  res %>%
     text=element_text(size=20),
     title=element_text(size=12),
     legend.title=element_text(size=18),
-    axis.title=element_text(size=18),
+    axis.title=element_text(size=15),
     legend.title.align=0.5
   ) +
   scale_x_continuous(breaks = c(0,0.5,1)) +
@@ -383,26 +342,23 @@ value_AM_heatMap <-  res %>%
 ## map difference #####
 res <- res %>%
   mutate(diff=valueAMinst-value_noRD+costDev_P1)
-break_point_low <- 0.003#max(res$diff[which(res$max_invest==0)])
 
-breaks_countour <- c(break_point_low,0.05,0.1)
-break_point <- round(max(res$diff),digits=1)
+breaks_countour <- c(0.003, 0.025, 0.065)#breaks_countour_AM-value_noRD+costDev_P1
 value_diff_heatMap <-  res %>%
   ggplot(aes(x = belief_benef_low, y = belief_benef_high)) +
   geom_raster(aes(fill=diff),interpolate = TRUE) +
   scale_fill_gradient(low = "white", high = "darkgreen"
-                      # ,
-                      # breaks = c(costDev_P1,break_point/2,break_point-costDev_P1),
-                      # labels = c(0,break_point/2,break_point)
+                      ,
+                      breaks = c(0,0.05,0.1),
+                      labels = c(0,0.05,0.1)
   ) +
-  labs(x = TeX("$\\beta^{r}_0$ (restoration)"),
-       y = TeX("$\\beta^{p}_0$ (prevention)"),
-       fill = TeX("Net benefits $(\\Delta_R)$")
-       # ,
-       # title="C. Yearly deployment\nnet benefits"
+  labs(x = TeX("Initial belief in restoration\ncapacity $\\beta^{r}_0$"),
+       y = TeX("Initial belief in prevention\ncapacity $\\beta^{p}_0$"),
+       fill = TeX("Net benefits\n$\\Delta_R$"),
+       title="C."
   ) +
   geom_contour(aes(z = diff),
-               binwidth = 0.05,
+               binwidth = 0.02,
                breaks = breaks_countour,
                colour = "black") +
   metR::geom_text_contour(aes(z = diff),
@@ -424,7 +380,7 @@ value_diff_heatMap <-  res %>%
     text=element_text(size=20),
     title=element_text(size=12),
     legend.title=element_text(size=18),
-    axis.title=element_text(size=18),
+    axis.title=element_text(size=15),
     legend.title.align=0.5
   ) +
   scale_x_continuous(breaks = c(0,0.5,1)) +
@@ -439,20 +395,19 @@ value_diff_heatMap <-  res %>%
            colour = "white")
 
 ## map TMAX#####
-breaks_countour_Tmax <- c(1,37,43)
+breaks_countour_Tmax <- c(1,30,40)
 max_time_heatMap <- ggplot(res,
                            aes(x = belief_benef_low, y = belief_benef_high)) +
   geom_raster(aes(fill=max_invest),interpolate = TRUE) +
   scale_fill_gradient(low = "white", high = "purple4"
-                      # ,
-                      # breaks = c(0,20,40),
-                      # labels = c(0,20,40)
+                      ,
+                      breaks = c(0,20,40),
+                      labels = c(0,20,40)
   ) +
-  labs(x = TeX("$\\beta^{r}_0$ (restoration)"),
-       y = TeX("$\\beta^{p}_0$ (prevention)"),
-       fill = TeX("Development time limit $T_{max}$"))+
-       # ,
-       # title="D. Optimal stopping\ntime for development") +
+  labs(x = TeX("Initial belief in restoration\ncapacity $\\beta^{r}_0$"),
+       y = TeX("Initial belief in prevention\ncapacity $\\beta^{p}_0$"),
+       fill = TeX("Development time limit\n$T_{max}$"),
+       title="D.") +
   geom_contour(aes(z = max_invest),
                binwidth = 10,
                breaks = breaks_countour_Tmax,
@@ -474,7 +429,7 @@ max_time_heatMap <- ggplot(res,
     legend.position="bottom",
     legend.title.position="top",
     legend.title=element_text(size=18),
-    axis.title=element_text(size=18),
+    axis.title=element_text(size=15),
     legend.key.height= unit(0.75, 'cm'),
     legend.key.width= unit(1, 'cm'),
     legend.title.align=0.5
@@ -516,6 +471,3 @@ for (x_coord in x_coords[-n_plots]) {
 
 ggsave(results_varying_priors_example_figure,
        plot = FIG, height = 5, width = 13, units = "in")
-
-
-

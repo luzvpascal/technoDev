@@ -9,7 +9,7 @@ gamma <- 0.9 #discount factor
 
 #reward
 V_max <- 1 #benefit if reef is healthy
-V_min <- 0.5*V_max #benefit if reef is unhealthy
+V_min <- 0.67*V_max #benefit if reef is unhealthy
 coeffDev <- 0.001 # cost of development relative to V_max
 coeffDeploy <- 2 #cost of deployment relative to coeffDev
 
@@ -83,14 +83,14 @@ results_varying_priors_example_file <- paste("res/2 initial belief benefits depl
                                              coeffDev,"cost", 0.5,"belief","_results_example.csv", sep="")
 
 results_varying_priors_example_figure <- paste("res/figures paper/2 initial belief benefits deployment/",
-                                               coeffDev,"cost", 0.5,"belief","_results_example.pdf", sep="")
+                                               coeffDev,"cost", 0.5,"belief","_results_example.svg", sep="")
 
 #analytical
 results_varying_priors_example_file_analytical <- paste("res/2 initial belief benefits deployment/",
                                                         coeffDev,"cost", 0.5,"belief","_results_example_analytical.csv", sep="")
 
 results_varying_priors_example_figure_analytical <- paste("res/figures paper/2 initial belief benefits deployment/",
-                                                          coeffDev,"cost", 0.5,"belief","_results_example_analytical.pdf", sep="")
+                                                          coeffDev,"cost", 0.5,"belief","_results_example_analytical.svg", sep="")
 
 ######################################
 ## 3 degradation recovery profiles####
@@ -112,7 +112,7 @@ coeffs_costDev_heatmap <- c(1e-4,1e-3,1e-2,1e-1)
 coeffs_costDep_heatmap <- c(2)
 graph_maxTime_file <- paste("res/4 initial belief feasibility and costs/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.csv", sep="")
 graph_maxTime_file_analytical <- paste("res/4 initial belief feasibility and costs/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying_analytical.csv", sep="")
-graph_maxTime_figure<- paste("res/figures paper/4 initial belief feasibility and costs/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.svg", sep="")
+graph_maxTime_figure<- paste("res/figures paper/4 initial belief feasibility and costs/",tr_nothing[1],tr_nothing[2],"graph MaxTime Costs Init Belief Varying.pdf", sep="")
 
 
 ###########################

@@ -19,16 +19,17 @@ graph_maxTime <- ggplot(results_graph,
                         aes(x=belief, y=max_invest,
                             group=cost_fact,
                             fill=cost_fact))+
-  geom_line(aes(color=cost_fact))+
+  geom_line(aes(color=cost_fact,linetype="Exact"))+
   geom_point(aes(color=cost_fact),shape = 15, size = 3) +
   scale_color_manual(values=c('dodgerblue1',
                               'red',
                               "dodgerblue4",
                               "darkblue"))+
-  labs(x = "Initial belief in technology feasibility (log-scale)",
+  labs(x = TeX("Initial belief in succesful technology developement ($b_0$ log-scale)"),
        y = TeX("$T_{max}$: time limit for technology development"),
        col = ("Relative cost\nof development"),
-       fill=("Relative cost\nof development"))+
+       fill=("Relative cost\nof development"),
+       linetype="")+
   theme_minimal()+
   scale_x_log10()+
   theme(text = element_text(size = 16))
@@ -45,10 +46,10 @@ analytical <- analytical%>%
 graph_maxTime <- graph_maxTime +
   geom_line(data=analytical,
             aes(x=belief, y=Tmax_years,group=cost_fact
-                , color=cost_fact
+                , color=cost_fact, , linetype="Analytical approx."
                 )
-            , linetype="dashed"
-            )
+            )+
+  scale_linetype_manual(values = c("dashed", "solid"))
 
 print(graph_maxTime)
 ggsave(graph_maxTime_figure,

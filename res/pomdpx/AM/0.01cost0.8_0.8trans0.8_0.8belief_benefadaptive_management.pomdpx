@@ -64,35 +64,35 @@
   
   <Entry>
  <Instance> action1 model1 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.7999 </ProbTable>
+ <ProbTable> 0.8 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action1 model1 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.2001 </ProbTable>
+ <ProbTable> 0.2 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action1 model1 obs_state2 obs_state1  </Instance>
- <ProbTable> 0.7999 </ProbTable>
+ <ProbTable> 0.8 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action1 model1 obs_state2 obs_state2  </Instance>
- <ProbTable> 0.2001 </ProbTable>
+ <ProbTable> 0.2 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model1 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.8435 </ProbTable>
+ <ProbTable> 0.8659 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model1 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.1565 </ProbTable>
+ <ProbTable> 0.1341 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model1 obs_state2 obs_state1  </Instance>
- <ProbTable> 0.845 </ProbTable>
+ <ProbTable> 0.8664 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model1 obs_state2 obs_state2  </Instance>
- <ProbTable> 0.155 </ProbTable>
+ <ProbTable> 0.1336 </ProbTable>
  </Entry>
  
   <Entry>
@@ -113,52 +113,52 @@
  </Entry>
  <Entry>
  <Instance> action2 model2 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.8629 </ProbTable>
+ <ProbTable> 0.8776 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model2 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.1371 </ProbTable>
+ <ProbTable> 0.1224 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model2 obs_state2 obs_state1  </Instance>
- <ProbTable> 0.359 </ProbTable>
+ <ProbTable> 0.3775 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model2 obs_state2 obs_state2  </Instance>
- <ProbTable> 0.641 </ProbTable>
+ <ProbTable> 0.6225 </ProbTable>
  </Entry>
  
   <Entry>
  <Instance> action1 model3 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.8 </ProbTable>
+ <ProbTable> 0.7999 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action1 model3 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.2 </ProbTable>
+ <ProbTable> 0.2001 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action1 model3 obs_state2 obs_state1  </Instance>
- <ProbTable> 0.8 </ProbTable>
+ <ProbTable> 0.7999 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action1 model3 obs_state2 obs_state2  </Instance>
- <ProbTable> 0.2 </ProbTable>
+ <ProbTable> 0.2001 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model3 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.3339 </ProbTable>
+ <ProbTable> 0.3582 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model3 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.6661 </ProbTable>
+ <ProbTable> 0.6418 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model3 obs_state2 obs_state1  </Instance>
- <ProbTable> 0.8286 </ProbTable>
+ <ProbTable> 0.856 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model3 obs_state2 obs_state2  </Instance>
- <ProbTable> 0.1714 </ProbTable>
+ <ProbTable> 0.144 </ProbTable>
  </Entry>
  
   <Entry>
@@ -179,19 +179,19 @@
  </Entry>
  <Entry>
  <Instance> action2 model4 obs_state1 obs_state1  </Instance>
- <ProbTable> 0.3692 </ProbTable>
+ <ProbTable> 0.3821 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model4 obs_state1 obs_state2  </Instance>
- <ProbTable> 0.6308 </ProbTable>
+ <ProbTable> 0.6179 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model4 obs_state2 obs_state1  </Instance>
- <ProbTable> 0.3237 </ProbTable>
+ <ProbTable> 0.3545 </ProbTable>
  </Entry>
  <Entry>
  <Instance> action2 model4 obs_state2 obs_state2  </Instance>
- <ProbTable> 0.6763 </ProbTable>
+ <ProbTable> 0.6455 </ProbTable>
  </Entry>
  </Parameter>
  </CondProb>
@@ -244,7 +244,7 @@
 <Parameter type="TBL">
  <Entry>
 <Instance> - - </Instance>
-<ValueTable>0.5 1 0.45 0.95</ValueTable>
+<ValueTable>0.67 1 0.65 0.98</ValueTable>
 </Entry>
  </Parameter>
 

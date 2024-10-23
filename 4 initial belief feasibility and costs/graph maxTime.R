@@ -76,7 +76,7 @@ for (coeffDev_index in coeffs_costDev_heatmap){
     ##################################
     ##solving POMDP with new costs####
     ##################################
-    models <- solving_POMDP(prob_ready,
+    models <- solving_POMDP(prob_idle_idle,
                             initial_belief_state_P1,
                             reward_POMDP,
                             solve_hmMDP,

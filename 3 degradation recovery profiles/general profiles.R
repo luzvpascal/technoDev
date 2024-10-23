@@ -50,10 +50,10 @@ res <- res %>%
             max_policy=policy[which.max(Freq)])%>%
   mutate(tr_low_low=1-tr_low_low)%>%
   mutate(max_policy = case_when(
-    max_policy == "1-Jan" ~ "Do not deploy",
-    max_policy == "1-Feb" ~ "Deploy healthy",
-    max_policy == "2-Jan" ~ "Deploy unhealthy",
-    max_policy == "2-Feb" ~ "Deploy"
+    max_policy == "1-1" ~ "Do not deploy",
+    max_policy == "1-2" ~ "Deploy healthy",
+    max_policy == "2-1" ~ "Deploy unhealthy",
+    max_policy == "2-2" ~ "Deploy"
   ))
 
 ##figure####
@@ -87,8 +87,8 @@ dominant_policy_plot <- ggplot()+
   ) +
   coord_equal()+
   labs(
-    x = "Recovery rate\n Pr(healthy| unhealthy, BAU)",
-    y = "Degradation rate\n Pr(unhealthy| healthy, BAU)"
+    x = "Recovery probability\n Pr(healthy| unhealthy, BAU)",
+    y = "Degradation probability\n Pr(unhealthy| healthy, BAU)"
   )+
   geom_point(data = data.frame(x = c(0.1, 0.9, 0.1,0.9), y = c(0.1, 0.1, 0.9,0.9),
                                policy_max="black"),

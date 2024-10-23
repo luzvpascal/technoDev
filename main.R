@@ -3,7 +3,7 @@ packages_to_install <- c("sarsop", "prodlim", "MDPtoolbox", "RColorBrewer",
                          "tidyverse", "foreach", "parallel", "doParallel",
                          "mgcv", "fmsb", "dplyr", "tidyverse", "ggpubr",
                          "Matrix", "latex2exp", "svglite", "ragg", "grid",
-                         "markovchain")
+                         "markovchain","metR")
 
 # Install packages if not already installed
 install_if_not_installed <- function(package) {
@@ -37,6 +37,7 @@ library(ragg)
 library(grid)
 library(markovchain)
 library(ggnewscale)
+library(metR)
 
 ## useful functions ####
 source("0 functions/load_functions.R")
@@ -52,7 +53,7 @@ source("2 initial belief benefits deployment/GBR heatmap + expected AM + strateg
 source("3 degradation recovery profiles/4 profiles.R")
 source("3 degradation recovery profiles/general profiles.R")
 
-#around 10 sec run time
+#around 5 mins
 source("4 initial belief feasibility and costs/graph maxTime.R")
 source("4 initial belief feasibility and costs/graph maxTime analytical.R")
 source("4 initial belief feasibility and costs/graph maxTime figure paper.R")
