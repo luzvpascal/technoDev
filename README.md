@@ -1,6 +1,8 @@
+[![DOI](https://zenodo.org/badge/750076459.svg)](https://doi.org/10.5281/zenodo.13984747)
+
 # When to stop developing new technologies ?
 
-This repository contains the code used to produce the results for the paper *When to stop developing new technologies?*. 
+This repository contains the code used to produce the results for the paper *Developing new technologies to protect ecosystems: planning with adaptive management*. 
 Here we provide instructions on how to use the code, and reproduce results.
 
 **WARNING** (long run time for experiments): We produced the results of the paper in 12h, on a DELL laptop (CPU	11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz, Base speed:	1.80 GHz, Sockets:	1,	Cores:	4, Logical processors:	8).
